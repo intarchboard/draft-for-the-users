@@ -1,7 +1,7 @@
 ---
 title: The Internet is for End Users
-docname: draft-nottingham-for-the-users-09
-date: 2019
+docname: draft-iab-for-the-users-latest
+date: {DATE}
 category: info
 
 ipr: trust200902
