@@ -3,6 +3,7 @@ title: The Internet is for End Users
 docname: draft-iab-for-the-users-latest
 date: {DATE}
 category: info
+workgroup: Internet Architecture Board (IAB)
 
 ipr: trust200902
 submissionType: IAB
