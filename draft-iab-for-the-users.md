@@ -56,14 +56,14 @@ This document explains why the IAB believes the IETF should consider end-users a
 
 --- note_Note_to_Readers
 
-The issues list for this draft can be found at <https://github.com/mnot/I-D/labels/for-the-users>.
+The issues list for this draft can be found at <https://github.com/intarchboard/for-the-users/issuess>.
 
-The most recent (often, unpublished) draft is at <https://mnot.github.io/I-D/for-the-users/>.
+The most recent (often, unpublished) draft is at <https://intarchboard.github.io/for-the-users/>.
 
-Recent changes are listed at <https://github.com/mnot/I-D/commits/gh-pages/for-the-users>.
+Recent changes are listed at <https://github.com/intarchboard/for-the-users/commits/master>.
 
 See also the draft's current status in the IETF datatracker, at
-<https://datatracker.ietf.org/doc/draft-nottingham-for-the-users/>.
+<https://datatracker.ietf.org/doc/draft-iab-for-the-users/>.
 
 --- middle
 
