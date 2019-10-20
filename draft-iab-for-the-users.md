@@ -122,17 +122,29 @@ The IETF community does not have any unique insight into what is "good for end u
 
 End users are typically not technical experts; their experience of the Internet is often based upon inadequate models of its properties, operation, and administration. Therefore, the IETF should primarily engage with those who understand how changes to it will affect end users; in particular civil society organisations, as well as governments, businesses and other groups representing some aspect of end-user interests.
 
-The IAB encourages the IETF to explicitly consider user impacts and points of view in any IETF work. The IAB also encourages the IETF to engage with the above parties on terms that suit them; it is not reasonable to require them to understand the mores and peculiarities of the IETF community - even though we encourage them to participate in it.
+The IAB encourages the IETF to explicitly consider user impacts and points of view in any IETF work. The IAB also encourages the IETF to engage with the parties above on terms that suit them; it is not reasonable to require them to understand the mores and peculiarities of the IETF community - even though we do encourage them to participate in it.
 
-That means, when appropriate, the technical community should take the initiative to contact these communities and explain our work, solicit their feedback, and encourage their participation. In cases where it is not reasonable for a stakeholder community to engage in the IETF process, the technical community should meet with them. IAB workshops can serve this purpose and the IAB encourages suggestions for topics where this would be of benefit.
+That means that we should take the initiative to contact these communities, explain our work, and solicit their feedback. We should not require them to "come to us"; unless a stakeholder community is able to engage in the IETF process effectively, the technical community should explore how to meet with them in their own communities.
 
-At our best, this will result in work that promotes the social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
+In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechanism to gather input within our community and perhaps some adjacent ones (such as academia), they often do not have the visibility in other communities that is required to solicit input, much less effective participation.
 
-At the very least, however, we must examine our work for impact on end users, and take positive steps to avoid it where we see it. In particular, when we've identified a conflict between the interests of end users and another stakeholder, we should err on the side of finding a solution that avoids harmful consequences to end users.
+There are a few ways to address this shortcoming:
 
-Note that "harmful" is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss. Furthermore, harm to end users is judged just like any other decision in the IETF, with consensus gathering and the normal appeals process; merely asserting that something is harmful is not adequate. The converse is also true, though; it's not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to us.
+* Identifying and partnering with appropriate stakeholder groups and holding a joint workshop or similar event.
 
-The IETF has already established a body of guidance for situations where this sort of conflict is common, including (but not limited to) {{?RFC7754}} on filtering, {{?RFC7258}} and {{?RFC7624}} on pervasive surveillance, {{?RFC7288}} on host firewalls, and {{?RFC6973}} regarding privacy considerations. When specific advice is not yet available, we try to find a different solution or another way to frame the problem, distilling the underlying principles into more general advice where appropriate.
+* Finding fora and events in relevant stakeholder communities and raising the visibility of IETF work (or potential IETF work) in them through conference talks, panels, newsletter articles, etc.
+
+* Clearly identifying feedback mechanisms that are tailored to appropriate communities, and assuring that they are well-known in those communities.
+
+At its best, our work will promote the common social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
+
+At the very least, however, we must examine our work for negative impact on end users, and take  steps to avoid it where encountered. In particular, when we've identified a conflict between the interests of end users and another stakeholder, we should err on the side of finding a solution that avoids harmful consequences to end users.
+
+Note that "harmful" is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss. Furthermore, harm to end users is judged just like any other decision in the IETF, with consensus gathering and the normal appeals process; merely asserting that something is harmful is not adequate. The converse is also true, though; it's not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to our attention.
+
+The IAB and IETF have already established a body of guidance for situations where this sort of conflict is common, including (but not limited to) {{?RFC7754}} on filtering, {{?RFC7258}} and {{?RFC7624}} on pervasive surveillance, {{?RFC7288}} on host firewalls, and {{?RFC6973}} regarding privacy considerations.
+
+When specific advice is not yet available, we try to find a different solution or another way to frame the problem, distilling the underlying principles into more general advice where appropriate.
 
 Much of that advice has focused on maintaining the end-to-end security properties of a connection. This does not mean that our responsibility to users stops there; protocol decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem in the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon -- one that protocol design might have some influence upon.
 
