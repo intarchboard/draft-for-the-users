@@ -71,7 +71,7 @@ See also the draft's current status in the IETF datatracker, at
 
 Many who participate in the IETF are most comfortable making what we believe to be purely technical decisions; our process is defined to favor technical merit, through our well-known mantra of "rough consensus and running code."
 
-Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others; while we believe we are making purely technical decisions, in reality, we are defining what is possible on the Internet itself.
+Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others; while we believe we are making only technical decisions, in reality, we are defining (in some degree) what is possible on the Internet itself.
 
 This impact has become significant. As the Internet increasingly mediates essential functions in societies, it has unavoidably become profoundly political; it has helped people overthrow governments and revolutionize social orders, control populations, collect data about individuals, and reveal secrets. It has created wealth for some individuals and companies while destroying others'.
 
@@ -88,7 +88,7 @@ In these situations, when one of those parties is an "end user" of the Internet 
 
 # What Are "End Users"? {#who}
 
-In this document, "end users," means non-technical users whose activities IETF protocols are designed to support, sometimes indirectly. Thus, the end user of a protocol to manage routers is not a router administrator; it is the people using the network that the router operates within.
+In this document, "end users," means non-technical users whose activities IETF standards are designed to support, sometimes indirectly. Thus, the end user of a protocol to manage routers is not a router administrator; it is the people using the network that the router operates within.
 
 End users are not necessarily a homogenous group; they might have different views of how the Internet should work (from their viewpoint) and might occupy several roles, such as a seller, buyer, publisher, reader, service provider and consumer. An end user might be browsing the Web, monitoring remote equipment, playing a game, video conferencing with colleagues, sending messages to friends, or performing an operation in a remote surgery theatre.
 
@@ -101,7 +101,9 @@ While such less-direct interactions between people and the Internet may be harde
 
 # Why End Users Should Be Prioritised {#why}
 
-While focused on technical matters, the IETF is not neutral about the purpose of its work in developing the Internet; in "A Mission Statement for the IETF" {{?RFC3935}}, the definitions include:
+The IETF has been focused on user needs since {{?RFC0001}}, which stated that "One of our goals must be to stimulate the immediate and easy use by a wide class of users."
+
+And, while we specialise in technical matters, the IETF is not neutral about the purpose of its work in developing the Internet; in "A Mission Statement for the IETF" {{?RFC3935}}, the definitions include:
 
 > The IETF community wants the Internet to succeed because we believe that the existence of the Internet, and its influence on economics, communication, and education, will help us to build a better human society.
 
@@ -111,44 +113,68 @@ and later in Section 2.1, "The Scope of the Internet" it says:
 
 In other words, the IETF is concerned with developing and maintaining the Internet to promote the social good, and the society that the IETF is attempting to improve is composed of end users, along with groups of them forming businesses, governments, clubs, civil society organizations, and other institutions.
 
-Merely advancing the measurable success of the Internet (e.g., deployment size, bandwidth, latency, number of users) is not adequate; doing so ignores how technology so often used as a lever to assert power over users, rather than empower them.
+Merely advancing the measurable success of the Internet (e.g., deployment size, bandwidth, latency, number of users) is not adequate; doing so ignores how technology is so often used as a lever to assert power over users, rather than empower them.
 
-Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet. Many aspects of the Internet are user-focused, and it will (deservedly) lose their trust if prioritises others' interests. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain; the Internet itself depends upon it.
+Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the relevance of the IETF. Perceptions of capture by vendors or other entities harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises others' interests over them, or is widely perceived to. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain.
 
 
-# How End Users are Prioritised {#how}
+# How End Users Can Be Prioritised {#how}
 
-The IETF community does not have any unique insight into what is "good for end users." To inform its decisions, it has a responsibility to analyse and consider the impacts of its work, as well as, where needed, interact with the greater Internet community, soliciting input from others and considering the issues raised.
+There are a few ways that the IAB believes the IETF community can prioritise end users, based upon our observations. By its nature, this is not a complete list.
 
-End users are typically not technical experts; their experience of the Internet is often based upon inadequate models of its properties, operation, and administration. Therefore, the IETF should primarily engage with those who understand how changes to it will affect end users; in particular civil society organisations, as well as governments, businesses and other groups representing some aspect of end-user interests.
+## Engaging the Internet Community
 
-The IAB encourages the IETF to explicitly consider user impacts and points of view in any IETF work. The IAB also encourages the IETF to engage with the parties above on terms that suit them; it is not reasonable to require them to understand the mores and peculiarities of the IETF community - even though we do encourage them to participate in it.
+The IETF community does not have any unique insight into what is "good for end users," and it is not uncommon for us to be at a further disadvantage because of our close understanding of some -- but not all -- aspects of the Internet.
 
-That means that we should take the initiative to contact these communities, explain our work, and solicit their feedback. We should not require them to "come to us"; unless a stakeholder community is able to engage in the IETF process effectively, the technical community should explore how to meet with them in their own communities.
+At the same time, we do have a culture of considerable deference to a larger "Internet community" in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have positive impact upon them.
 
-In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechanism to gather input within our community and perhaps some adjacent ones (such as academia), they often do not have the visibility in other communities that is required to solicit input, much less effective participation.
+Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community, soliciting input and considering the issues raised there.
 
-There are a few ways to address this shortcoming:
+The IETF community faces significant hurdles in doing so. Our work is specialised and often esoteric, and standard processes often occur on very long timescales. Affected parties are rarely technical experts, and their experience of the Internet is often based upon incomplete (and sometimes inaccurate) models. Often, even when we try to engage a broader audience, their participation is minimal -- until a change affects someone in a way they don't like. Surprising the Internet community is rarely a good outcome.
 
-* Identifying and partnering with appropriate stakeholder groups and holding a joint workshop or similar event.
+While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are the necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often very deep, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.
 
-* Finding fora and events in relevant stakeholder communities and raising the visibility of IETF work (or potential IETF work) in them through conference talks, panels, newsletter articles, etc.
+Government representatives sometimes participate in the IETF community. While this is welcome, it should not be taken as automatically representative of end users elsewhere, or even all end users in the relevant jurisdiction.
 
-* Clearly identifying feedback mechanisms that are tailored to appropriate communities, and assuring that they are well-known in those communities.
+A promising approach to help fill these gaps is to identify and engage with specifically affected communities; for example, one or more industry associations, user groups, or a set of individuals, if we can be confident that they are appropriately representative across relevant measurements.
 
-At its best, our work will promote the common social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
+In doing so, we should not require them to  "come to us"; unless a stakeholder community is already engaged in the IETF process effectively, the IETF community should explore how to meet with them on their own terms -- taking the initiative to contact the, explain our work, and solicit their feedback.
 
-At the very least, however, we must examine our work for negative impact on end users, and take  steps to avoid it where encountered. In particular, when we've identified a conflict between the interests of end users and another stakeholder, we should err on the side of finding a solution that avoids harmful consequences to end users.
+In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechanism to gather input within our community, they often do not have the visibility in other communities that is required to solicit input, much less effective participation.
 
-Note that "harmful" is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss. Furthermore, harm to end users is judged just like any other decision in the IETF, with consensus gathering and the normal appeals process; merely asserting that something is harmful is not adequate. The converse is also true, though; it's not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to our attention.
+Instead, an event like a workshop should be co-located -- and ideally hosted or co-hosted -- by a forum that's familiar to that stakeholder community. We should also take the opportunity to raise the visibility of IETF work (or potential IETF work) in such fora through conference talks, panels, newsletter articles, etc.
+
+When we engage with the Internet community, we should also clearly identify feedback mechanisms that are tailored to their needs (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.
+
+
+## Creating User-Focused Feedback Mechanisms
+
+Special attention should be paid to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.
+
+For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser -- called the User Agent in {{?RFC7230}} and other specifications. Because there are multiple implementations of the standards that specify a Web browser, there is a natural competition between them to do just that -- represent the user's needs as an agent. As a result, Web browsers' interests are often well-aligned with those of their users, creating an ecosystem that is positively user-focused.
+
+In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role for representing the needs of the end user. Perhaps as a result of this, that ecosystem and its users face serious challenges.
+
+
+## Identifying Negative End User Impact
+
+At its best, our work will unambiguously promote the common social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
+
+At the very least, however, we must examine our work for negative impact on end users, and take  steps to mitigate it where encountered. In particular, when we've identified a conflict between the interests of end users and other stakeholders, we should err on the side of protecting end users.
+
+Note that "negative impact on end users" is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss and come to consensus on; merely asserting that something is harmful is not adequate. The converse is also true, though; it's not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to our attention.
 
 The IAB and IETF have already established a body of guidance for situations where this sort of conflict is common, including (but not limited to) {{?RFC7754}} on filtering, {{?RFC7258}} and {{?RFC7624}} on pervasive surveillance, {{?RFC7288}} on host firewalls, and {{?RFC6973}} regarding privacy considerations.
 
-When specific advice is not yet available, we try to find a different solution or another way to frame the problem, distilling the underlying principles into more general advice where appropriate.
+Much of that advice has focused on maintaining the end-to-end properties of a connection {{?RFC3724}}. This does not mean that our responsibility to users stops there; decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem in the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon -- one that protocol design might have some influence upon.
 
-Much of that advice has focused on maintaining the end-to-end security properties of a connection. This does not mean that our responsibility to users stops there; protocol decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem in the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon -- one that protocol design might have some influence upon.
 
-When the needs of different end users conflict (for example, two sets of end users both have reasonable desires) we again should try to minimise harm. For example, when a decision improves the Internet for end users in one jurisdiction, but at the cost of potential harm to others elsewhere, that is not a good tradeoff. As such, we effectively design the Internet for the pessimal environment; if a user can be harmed, they probably will be.
+
+## Handling Conflicting End User Needs
+
+When the needs of different end users conflict (for example, two sets of end users both have reasonable desires) we again should try to minimise negative impact.
+
+For example, when a decision improves the Internet for end users in one jurisdiction, but at the cost of potential harm to others elsewhere, that is not a good tradeoff. As such, we effectively design the Internet for the pessimal environment; if a user can be harmed, they probably will be.
 
 There may be cases where genuine technical need requires compromise. However, such tradeoffs are carefully examined and avoided when there are alternate means of achieving the desired goals. If they cannot be, these choices and reasoning ought to be thoroughly documented.
 
