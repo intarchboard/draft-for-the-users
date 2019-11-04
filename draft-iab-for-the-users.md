@@ -83,7 +83,7 @@ Successful specifications will provide some benefit to all of the relevant parti
 
 In these situations, when one of those parties is an "end user" of the Internet -- for example, a person using a Web browser, mail client, or another agent that connects to the Internet -- the Internet Architecture Board argues that the IETF should protect their interests over those of parties.
 
-{{who}} explains what is meant by "end users"; {{why}} outlines why they should be prioritised in IETF work, and {{how}} describes how that can be done.
+{{who}} explains what is meant by "end users"; {{why}} outlines why IETF work should prioritise them, and {{how}} describes how we can do that.
 
 
 # What Are "End Users"? {#who}
@@ -99,9 +99,9 @@ A person whose interests we need to consider might not directly be using a speci
 While such less-direct interactions between people and the Internet may be harder to evaluate, such people are nonetheless included in this document's concept of end user.
 
 
-# Why End Users Should Be Prioritised {#why}
+# Why The IETF Should Prioritise End Users {#why}
 
-The IETF has been focused on user needs since {{?RFC0001}}, which stated that "One of our goals must be to stimulate the immediate and easy use by a wide class of users."
+The IETF has focused on user needs since {{?RFC0001}}, which stated that "One of our goals must be to stimulate the immediate and easy use by a wide class of users."
 
 And, while we specialise in technical matters, the IETF is not neutral about the purpose of its work in developing the Internet; in "A Mission Statement for the IETF" {{?RFC3935}}, the definitions include:
 
@@ -118,7 +118,7 @@ Merely advancing the measurable success of the Internet (e.g., deployment size, 
 Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the relevance of the IETF. Perceptions of capture by vendors or other entities harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises others' interests over them, or is widely perceived to. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain.
 
 
-# How End Users Can Be Prioritised {#how}
+# How The IETF Can Prioritise End Users {#how}
 
 There are a few ways that the IAB believes the IETF community can prioritise end users, based upon our observations. By its nature, this is not a complete list.
 
