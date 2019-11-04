@@ -158,7 +158,7 @@ In contrast, the Internet of Things (IoT) has not yet seen the emergence of a na
 
 ## Identifying Negative End User Impact
 
-At its best, our work will unambiguously promote the common social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
+At its best, our work will unambiguously promote the collective social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
 
 At the very least, however, we must examine our work for negative impact on end users, and take steps to mitigate it where encountered. In particular, when we've identified a conflict between the interests of end users and other stakeholders, we should err on the side of protecting end users.
 
