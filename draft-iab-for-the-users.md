@@ -132,7 +132,7 @@ Therefore, we have not only a responsibility to analyse and consider the impacts
 
 The IETF community faces significant hurdles in doing so. Our work is specialised and often esoteric, and standard processes often occur on very long timescales. Affected parties are rarely technical experts, and their experience of the Internet is often based upon incomplete (and sometimes inaccurate) models. Often, even when we try to engage a broader audience, their participation is minimal -- until a change affects someone in a way they don't like. Surprising the Internet community is rarely a good outcome.
 
-While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often very deep, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.
+While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often profound, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.
 
 Government representatives sometimes participate in the IETF community. While this is welcome, it should not be taken as automatically representative of end users elsewhere, or even all end users in the relevant jurisdiction.
 
