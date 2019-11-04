@@ -166,7 +166,7 @@ Note that "negative impact on end users" is not defined in this document; that i
 
 The IAB and IETF have already established a body of guidance for situations where this sort of conflict is common, including (but not limited to) {{?RFC7754}} on filtering, {{?RFC7258}} and {{?RFC7624}} on pervasive surveillance, {{?RFC7288}} on host firewalls, and {{?RFC6973}} regarding privacy considerations.
 
-Much of that advice has focused on maintaining the end-to-end properties of a connection {{?RFC3724}}. This does not mean that our responsibility to users stops there; decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem in the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon -- one that protocol design might have some influence upon.
+Much of that advice has focused on maintaining the end-to-end properties of a connection {{?RFC3724}}. This does not mean that our responsibility to users stops there; decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem on the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon -- one that protocol design might have some influence upon.
 
 
 
