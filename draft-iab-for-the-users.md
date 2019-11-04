@@ -160,7 +160,7 @@ In contrast, the Internet of Things (IoT) has not yet seen the emergence of a na
 
 At its best, our work will unambiguously promote the common social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
 
-At the very least, however, we must examine our work for negative impact on end users, and take  steps to mitigate it where encountered. In particular, when we've identified a conflict between the interests of end users and other stakeholders, we should err on the side of protecting end users.
+At the very least, however, we must examine our work for negative impact on end users, and take steps to mitigate it where encountered. In particular, when we've identified a conflict between the interests of end users and other stakeholders, we should err on the side of protecting end users.
 
 Note that "negative impact on end users" is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss and come to consensus on; merely asserting that something is harmful is not adequate. The converse is also true, though; it's not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to our attention.
 
