@@ -126,7 +126,7 @@ There are a few ways that the IAB believes the IETF community can prioritise end
 
 The IETF community does not have any unique insight into what is "good for end users," and it is not uncommon for us to be at a further disadvantage because of our close understanding of some -- but not all -- aspects of the Internet.
 
-At the same time, we do have a culture of considerable deference to a larger "Internet community" in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have positive impact upon them.
+At the same time, we do have a culture of considerable deference to a larger "Internet community" in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have a positive impact upon them.
 
 Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community, soliciting input and considering the issues raised there.
 
