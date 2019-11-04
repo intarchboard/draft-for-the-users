@@ -77,7 +77,7 @@ This impact has become significant. As the Internet increasingly mediates essent
 
 All of this raises the question: Who do we go through the pain of gathering rough consensus and writing running code for?
 
-After all, there are a variety of identifiable parties in the broader Internet community that standards can provide benefit to, such as (but not limited to) end users, network operators, schools, equipment vendors, specification authors, specification implementers, content owners, governments, non-governmental organisations, social movements, employers, and parents.
+After all, there are a variety of parties that standards can benefit, such as (but not limited to) end users, network operators, schools, equipment vendors, specification authors, specification implementers, content owners, governments, non-governmental organisations, social movements, employers, and parents.
 
 Successful specifications will provide some benefit to all of the relevant parties because standards do not represent a zero-sum game. However, there are sometimes situations where there is a need to balance the benefits of a decision between two (or more) parties.
 
