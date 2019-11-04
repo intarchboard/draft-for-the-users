@@ -51,7 +51,7 @@ informative:
 
 --- abstract
 
-This document explains why the IAB believes the IETF should consider end-users as its highest priority concern, and how that can be done.
+This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done.
 
 
 --- note_Note_to_Readers
@@ -96,7 +96,7 @@ Likewise, an individual end user might have many interests (e.g., privacy, secur
 
 A person whose interests we need to consider might not directly be using a specific system connected to the Internet. For example, if a child is using a browser, the interests of that child's parents or guardians may be relevant; if a person is pictured in a photograph, that person may have an interest in systems that process that photograph, or if a person entering a room triggers sensors that send data to the Internet than that person's interests may be involved in our deliberations about how those sensor readings are handled.
 
-While such less-direct interactions between people and the Internet may be harder to evaluate, such people are nonetheless included in this document's concept of end-user.
+While such less-direct interactions between people and the Internet may be harder to evaluate, such people are nonetheless included in this document's concept of end user.
 
 
 # Why End Users Should Be Prioritised {#why}
