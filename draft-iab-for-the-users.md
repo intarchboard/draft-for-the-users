@@ -138,7 +138,7 @@ Government representatives sometimes participate in the IETF community. While th
 
 A promising approach to help fill these gaps is to identify and engage with specifically affected communities; for example, one or more industry associations, user groups, or a set of individuals, though we can't of course formally ensure that they are appropriately representative.
 
-In doing so, we should not require them to  "come to us"; unless a stakeholder community is already engaged in the IETF process effectively, the IETF community should explore how to meet with them on their own terms -- taking the initiative to contact the, explain our work, and solicit their feedback.
+In doing so, we should not require them to  "come to us"; unless a stakeholder community is already engaged in the IETF process effectively, the IETF community should explore how to meet with them on their own terms -- taking the initiative to contact them, explain our work, and solicit their feedback.
 
 In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechanism to gather input within our community, they often do not have the visibility in other communities that is required to solicit input, much less effective participation.
 
