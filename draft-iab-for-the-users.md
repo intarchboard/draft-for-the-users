@@ -94,9 +94,9 @@ End users are not necessarily a homogenous group; they might have different view
 
 Likewise, an individual end user might have many interests (e.g., privacy, security, flexibility, reachability) that are sometimes in tension.
 
-A person whose interests we need to consider might not directly be using a specific system connected to the Internet. For example, if a child is using a browser, the interests of that child's parents or guardians may be relevant; if a person is pictured in a photograph, that person may have an interest in systems that process that photograph, or if a person entering a room triggers sensors that send data to the Internet than that person's interests may be involved in our deliberations about how those sensor readings are handled.
+A person whose interests we need to consider might not directly be using a specific system connected to the Internet. For example, if a child is using a browser, the interests of that child's parents or guardians may be relevant. A person pictured in a photograph may have an interest in systems that process that photograph; a person entering a room with sensors that send data to the Internet has interests that may be involved in our deliberations about how those sensor readings are handled.
 
-While such less-direct interactions between people and the Internet may be harder to evaluate, such people are nonetheless included in this document's concept of end user.
+While such less-direct interactions between people and the Internet may be harder to evaluate, this document's concept of end-user nonetheless includes such people.
 
 
 # Why The IETF Should Prioritise End Users {#why}
@@ -115,7 +115,7 @@ In other words, the IETF is concerned with developing and maintaining the Intern
 
 Merely advancing the measurable success of the Internet (e.g., deployment size, bandwidth, latency, number of users) is not adequate; doing so ignores how technology is so often used as a lever to assert power over users, rather than empower them.
 
-Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the relevance of the IETF. Perceptions of capture by vendors or other entities harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises others' interests over them, or is widely perceived to. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain.
+Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the relevance of the IETF. Perceptions of capture by vendors or other entities harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises (or is perceived to prioritise) others' interests over them. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain.
 
 
 # How The IETF Can Prioritise End Users {#how}
@@ -144,12 +144,12 @@ In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechan
 
 Instead, an event like a workshop should be co-located -- and ideally hosted or co-hosted -- by a forum that's familiar to that stakeholder community. We should also take the opportunity to raise the visibility of IETF work (or potential IETF work) in such fora through conference talks, panels, newsletter articles, etc.
 
-When we engage with the Internet community, we should also clearly identify feedback mechanisms that are tailored to their needs (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.
+When we engage with the Internet community, we should also clearly identify tailored feedback mechanisms (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.
 
 
 ## Creating User-Focused Feedback Mechanisms
 
-Particular attention should be paid to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.
+We should pay particular attention to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.
 
 For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser -- called the User Agent in {{?RFC7230}} and other specifications. Because there is more than one implementation of the standards that specify a Web browser, there is a natural competition between them to do carefully consider the user's needs as an agent. As a result, Web browsers' interests are better aligned with those of their users, creating an ecosystem that is positively user-focused.
 
