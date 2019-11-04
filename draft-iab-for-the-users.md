@@ -71,7 +71,7 @@ See also the draft's current status in the IETF datatracker, at
 
 Many who participate in the IETF are most comfortable making what we believe to be purely technical decisions; our process is defined to favor technical merit, through our well-known mantra of "rough consensus and running code."
 
-Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others; while we believe we are making only technical decisions, in reality, we are defining (in some degree) what is possible on the Internet itself.
+Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others. While we believe we are making only technical decisions, in reality, we are defining (in some degree) what is possible on the Internet itself.
 
 This impact has become significant. As the Internet increasingly mediates essential functions in societies, it has unavoidably become profoundly political; it has helped people overthrow governments and revolutionize social orders, control populations, collect data about individuals, and reveal secrets. It has created wealth for some individuals and companies while destroying others'.
 
