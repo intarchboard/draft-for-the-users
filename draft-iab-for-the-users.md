@@ -107,7 +107,7 @@ And, while we specialise in technical matters, the IETF is not neutral about the
 
 > The IETF community wants the Internet to succeed because we believe that the existence of the Internet, and its influence on economics, communication, and education, will help us to build a better human society.
 
-and later in Section 2.1, "The Scope of the Internet" it says:
+Later in Section 2.1, "The Scope of the Internet" it says:
 
 > The Internet isn't value-neutral, and neither is the IETF. We want the Internet to be useful for communities that share our commitment to openness and fairness. We embrace technical concepts such as decentralized control, edge-user empowerment and sharing of resources, because those concepts resonate with the core values of the IETF community. These concepts have little to do with the technology that's possible, and much to do with the technology that we choose to create.
 
