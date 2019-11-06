@@ -115,7 +115,7 @@ In other words, the IETF is concerned with developing and maintaining the Intern
 
 Merely advancing the measurable success of the Internet (e.g., deployment size, bandwidth, latency, number of users) is not an adequate goal; doing so ignores how technology is so often used as a lever to assert power over users, rather than empower them.
 
-Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the relevance of the IETF. Perceptions of capture by vendors or other entities harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises (or is perceived to prioritise) others' interests over them. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain.
+Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the IETF's relevance to it. Perceptions of capture by vendors or other entities harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises (or is perceived to prioritise) others' interests over them. Because one of the primary mechanisms of the Internet is the "network effect", such trust is crucial to maintain.
 
 
 # How The IETF Can Prioritise End Users {#how}
