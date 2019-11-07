@@ -3,9 +3,9 @@
 
 
 Internet Architecture Board (IAB)                          M. Nottingham
-Internet-Draft                                          October 31, 2019
+Internet-Draft                                          November 7, 2019
 Intended status: Informational
-Expires: May 3, 2020
+Expires: May 10, 2020
 
 
                      The Internet is for End Users
@@ -14,7 +14,7 @@ Expires: May 3, 2020
 Abstract
 
    This document explains why the IAB believes the IETF should consider
-   end-users as its highest priority concern, and how that can be done.
+   end users as its highest priority concern, and how that can be done.
 
 Note to Readers
 
@@ -45,7 +45,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on May 3, 2020.
+   This Internet-Draft will expire on May 10, 2020.
 
 
 
@@ -53,9 +53,9 @@ Status of This Memo
 
 
 
-Nottingham                 Expires May 3, 2020                  [Page 1]
+Nottingham                Expires May 10, 2020                  [Page 1]
 
-Internet-Draft        The Internet is for End Users         October 2019
+Internet-Draft        The Internet is for End Users        November 2019
 
 
 Copyright Notice
@@ -74,19 +74,21 @@ Table of Contents
 
    1.  Introduction  . . . . . . . . . . . . . . . . . . . . . . . .   2
    2.  What Are "End Users"? . . . . . . . . . . . . . . . . . . . .   3
-   3.  Why End Users Should Be Prioritised . . . . . . . . . . . . .   4
-   4.  How End Users Can Be Prioritised  . . . . . . . . . . . . . .   5
+   3.  Why The IETF Should Prioritise End Users  . . . . . . . . . .   4
+   4.  How The IETF Can Prioritise End Users . . . . . . . . . . . .   5
      4.1.  Engaging the Internet Community . . . . . . . . . . . . .   5
-     4.2.  Creating User-Focused Feedback Mechanisms . . . . . . . .   6
-     4.3.  Identifying Negative End User Impact  . . . . . . . . . .   7
-     4.4.  Handling Conflicting End User Needs . . . . . . . . . . .   8
-   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   8
-   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   8
-   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   8
-     7.1.  Informative References  . . . . . . . . . . . . . . . . .   8
-     7.2.  URIs  . . . . . . . . . . . . . . . . . . . . . . . . . .   9
-   Appendix A.  Acknowledgements . . . . . . . . . . . . . . . . . .  10
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  10
+     4.2.  Creating User-Focused Systems . . . . . . . . . . . . . .   7
+     4.3.  Designing for Positive User Outcomes  . . . . . . . . . .   7
+     4.4.  Identifying Negative End User Impact  . . . . . . . . . .   8
+     4.5.  Handling Conflicting End User Needs . . . . . . . . . . .   8
+     4.6.  Deprioritising Internal Needs . . . . . . . . . . . . . .   9
+   5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
+   6.  Security Considerations . . . . . . . . . . . . . . . . . . .   9
+   7.  References  . . . . . . . . . . . . . . . . . . . . . . . . .   9
+     7.1.  Informative References  . . . . . . . . . . . . . . . . .   9
+     7.2.  URIs  . . . . . . . . . . . . . . . . . . . . . . . . . .  10
+   Appendix A.  Acknowledgements . . . . . . . . . . . . . . . . . .  11
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  11
 
 1.  Introduction
 
@@ -98,33 +100,32 @@ Table of Contents
    Nevertheless, the running code that results from our process (when
    things work well) inevitably has an impact beyond technical
    considerations, because the underlying decisions afford some uses
-   while discouraging others; while we believe we are making only
+   while discouraging others.  While we believe we are making only
    technical decisions, in reality, we are defining (in some degree)
    what is possible on the Internet itself.
 
    This impact has become significant.  As the Internet increasingly
    mediates essential functions in societies, it has unavoidably become
-   profoundly political; it has helped people overthrow governments and
-   revolutionize social orders, control populations, collect data about
 
 
 
-Nottingham                 Expires May 3, 2020                  [Page 2]
+Nottingham                Expires May 10, 2020                  [Page 2]
 
-Internet-Draft        The Internet is for End Users         October 2019
+Internet-Draft        The Internet is for End Users        November 2019
 
 
-   individuals, and reveal secrets.  It has created wealth for some
-   individuals and companies while destroying others'.
+   profoundly political; it has helped people overthrow governments and
+   revolutionize social orders, swing elections, control populations,
+   collect data about individuals, and reveal secrets.  It has created
+   wealth for some individuals and companies while destroying others'.
 
    All of this raises the question: Who do we go through the pain of
    gathering rough consensus and writing running code for?
 
-   After all, there are a variety of identifiable parties in the broader
-   Internet community that standards can provide benefit to, such as
-   (but not limited to) end users, network operators, schools, equipment
-   vendors, specification authors, specification implementers, content
-   owners, governments, non-governmental organisations, social
+   After all, there are a variety of parties that standards can benefit,
+   such as (but not limited to) end users, network operators, schools,
+   equipment vendors, specification authors, specification implementers,
+   content owners, governments, non-governmental organisations, social
    movements, employers, and parents.
 
    Successful specifications will provide some benefit to all of the
@@ -135,12 +136,12 @@ Internet-Draft        The Internet is for End Users         October 2019
    In these situations, when one of those parties is an "end user" of
    the Internet - for example, a person using a Web browser, mail
    client, or another agent that connects to the Internet - the Internet
-   Architecture Board argues that the IETF should protect their
-   interests over those of parties.
+   Architecture Board argues that the IETF should favor their interests
+   over those of parties.
 
    Section 2 explains what is meant by "end users"; Section 3 outlines
-   why they should be prioritised in IETF work, and Section 4 describes
-   how that can be done.
+   why IETF work should prioritise them, and Section 4 describes how we
+   can do that.
 
 2.  What Are "End Users"?
 
@@ -151,43 +152,46 @@ Internet-Draft        The Internet is for End Users         October 2019
    the router operates within.
 
    End users are not necessarily a homogenous group; they might have
-   different views of how the Internet should work (from their
-   viewpoint) and might occupy several roles, such as a seller, buyer,
-   publisher, reader, service provider and consumer.  An end user might
-   be browsing the Web, monitoring remote equipment, playing a game,
-   video conferencing with colleagues, sending messages to friends, or
-   performing an operation in a remote surgery theatre.
+   different views of how the Internet should work, and might occupy
+   several roles, such as a seller, buyer, publisher, reader, service
+   provider and consumer.  An end user might be browsing the Web,
+   monitoring remote equipment, playing a game, video conferencing with
+   colleagues, sending messages to friends, or performing an operation
+   in a remote surgery theatre.  They might be "at the keyboard", or
+   represented by software indirectly (e.g., as a daemon).
+
+
+
+
+
+
+Nottingham                Expires May 10, 2020                  [Page 3]
+
+Internet-Draft        The Internet is for End Users        November 2019
+
 
    Likewise, an individual end user might have many interests (e.g.,
    privacy, security, flexibility, reachability) that are sometimes in
    tension.
 
-
-
-
-Nottingham                 Expires May 3, 2020                  [Page 3]
-
-Internet-Draft        The Internet is for End Users         October 2019
-
-
    A person whose interests we need to consider might not directly be
    using a specific system connected to the Internet.  For example, if a
    child is using a browser, the interests of that child's parents or
-   guardians may be relevant; if a person is pictured in a photograph,
-   that person may have an interest in systems that process that
-   photograph, or if a person entering a room triggers sensors that send
-   data to the Internet than that person's interests may be involved in
-   our deliberations about how those sensor readings are handled.
+   guardians may be relevant.  A person pictured in a photograph may
+   have an interest in systems that process that photograph; a person
+   entering a room with sensors that send data to the Internet has
+   interests that may be involved in our deliberations about how those
+   sensor readings are handled.
 
    While such less-direct interactions between people and the Internet
-   may be harder to evaluate, such people are nonetheless included in
-   this document's concept of end-user.
+   may be harder to evaluate, this document's concept of end-user
+   nonetheless includes such people.
 
-3.  Why End Users Should Be Prioritised
+3.  Why The IETF Should Prioritise End Users
 
-   The IETF has been focused on user needs since [RFC0001], which stated
-   that "One of our goals must be to stimulate the immediate and easy
-   use by a wide class of users."
+   The IETF has focused on user needs since [RFC0001], which stated that
+   "One of our goals must be to stimulate the immediate and easy use by
+   a wide class of users."
 
    And, while we specialise in technical matters, the IETF is not
    neutral about the purpose of its work in developing the Internet; in
@@ -199,7 +203,7 @@ Internet-Draft        The Internet is for End Users         October 2019
       economics, communication, and education, will help us to build a
       better human society.
 
-   and later in Section 2.1, "The Scope of the Internet" it says:
+   Later in Section 2.1, "The Scope of the Internet" it says:
 
       The Internet isn't value-neutral, and neither is the IETF.  We
       want the Internet to be useful for communities that share our
@@ -213,31 +217,36 @@ Internet-Draft        The Internet is for End Users         October 2019
    In other words, the IETF is concerned with developing and maintaining
    the Internet to promote the social good, and the society that the
    IETF is attempting to improve is composed of end users, along with
+
+
+
+
+Nottingham                Expires May 10, 2020                  [Page 4]
+
+Internet-Draft        The Internet is for End Users        November 2019
+
+
    groups of them forming businesses, governments, clubs, civil society
    organizations, and other institutions.
 
    Merely advancing the measurable success of the Internet (e.g.,
-   deployment size, bandwidth, latency, number of users) is not
-
-
-
-Nottingham                 Expires May 3, 2020                  [Page 4]
-
-Internet-Draft        The Internet is for End Users         October 2019
-
-
-   adequate; doing so ignores how technology is so often used as a lever
-   to assert power over users, rather than empower them.
+   deployment size, bandwidth, latency, number of users) is not an
+   adequate goal; doing so ignores how technology is so often used as a
+   lever to assert power over users, rather than empower them.
 
    Beyond fulfilling the IETF's mission, prioritising end users also
-   helps to ensure the long-term health of the Internet and the
-   relevance of the IETF.  Perceptions of capture by vendors or other
-   entities harm both; the IETF's work will (deservedly) lose end users'
-   trust if it prioritises others' interests over them, or is widely
-   perceived to.  Because one of the primary mechanisms of the Internet
-   is the "network effect", such trust is crucial to maintain.
+   helps to ensure the long-term health of the Internet and the IETF's
+   relevance to it.  Perceptions of capture by vendors or other entities
+   harm both; the IETF's work will (deservedly) lose end users' trust if
+   it prioritises (or is perceived to prioritise) others' interests over
+   them.
 
-4.  How End Users Can Be Prioritised
+   Ultimately, the Internet will succeed or fail based upon the actions
+   of its users, because they are the driving force behind its growth to
+   date.  Not prioritising them jeopardizes the network effect which the
+   Internet relies upon to provide so much value.
+
+4.  How The IETF Can Prioritise End Users
 
    There are a few ways that the IAB believes the IETF community can
    prioritise end users, based upon our observations.  By its nature,
@@ -251,16 +260,27 @@ Internet-Draft        The Internet is for End Users         October 2019
    not all - aspects of the Internet.
 
    At the same time, we do have a culture of considerable deference to a
-   larger "Internet community" in our decision-making processes.  Mere
+   broader "Internet community" in our decision-making processes.  Mere
    deference, however, is not adequate; even with the best intentions,
    we cannot assume that our experiences of the Internet are those of
-   all of its end users, or that our decisions have positive impact upon
-   them.
+   all of its end users, or that our decisions have a positive impact
+   upon them.
 
    Therefore, we have not only a responsibility to analyse and consider
    the impacts of the IETF's work, but also a responsibility to consult
-   with that greater Internet community, soliciting input and
-   considering the issues raised there.
+   with that greater Internet community.  We should enter into a
+   dialogue about not only the technical concerns that are well-
+   represented in the IETF but also the political, social and economic
+   concerns that it engenders, and that are better represented
+   elsewhere.
+
+
+
+
+Nottingham                Expires May 10, 2020                  [Page 5]
+
+Internet-Draft        The Internet is for End Users        November 2019
+
 
    The IETF community faces significant hurdles in doing so.  Our work
    is specialised and often esoteric, and standard processes often occur
@@ -271,39 +291,33 @@ Internet-Draft        The Internet is for End Users         October 2019
    until a change affects someone in a way they don't like.  Surprising
    the Internet community is rarely a good outcome.
 
+   Government representatives sometimes participate in the IETF
+   community.  While this is welcome, it should not be taken as
+   automatically representative of end users elsewhere, or even all end
+   users in the relevant jurisdiction.  Furthermore, what is desirable
+   in one jurisdiction (or at least to its administrators) might be
+   detrimental in others (see Section 4.5).
+
    While some civil society organisations specialise in technology and
    Internet policy, they typically do not have the capacity to
-   participate broadly, nor are the necessarily representative of the
-
-
-
-Nottingham                 Expires May 3, 2020                  [Page 5]
-
-Internet-Draft        The Internet is for End Users         October 2019
-
-
+   participate broadly, nor are they necessarily representative of the
    larger Internet community.  Nevertheless, their understanding of end
-   user needs is often very deep, and they are in many ways the most
+   user needs is often profound, and they are in many ways the most
    representative advocates for end user concerns; they should be
    considered a primary channel for engaging the broader Internet
    community.
 
-   Government representatives sometimes participate in the IETF
-   community.  While this is welcome, it should not be taken as
-   automatically representative of end users elsewhere, or even all end
-   users in the relevant jurisdiction.
-
    A promising approach to help fill these gaps is to identify and
    engage with specifically affected communities; for example, one or
-   more industry associations, user groups, or a set of individuals, if
-   we can be confident that they are appropriately representative across
-   relevant measurements.
+   more industry associations, user groups, or a set of individuals,
+   though we can't of course formally ensure that they are appropriately
+   representative.
 
    In doing so, we should not require them to "come to us"; unless a
    stakeholder community is already engaged in the IETF process
    effectively, the IETF community should explore how to meet with them
-   on their own terms - taking the initiative to contact the, explain
-   our work, and solicit their feedback.
+   on their terms - taking the initiative to contact them, explain our
+   work, and solicit their feedback.
 
    In particular, while IAB workshops, BoFs and Bar BoFs can be an
    effective mechanism to gather input within our community, they often
@@ -316,32 +330,36 @@ Internet-Draft        The Internet is for End Users         October 2019
    visibility of IETF work (or potential IETF work) in such fora through
    conference talks, panels, newsletter articles, etc.
 
+
+
+
+Nottingham                Expires May 10, 2020                  [Page 6]
+
+Internet-Draft        The Internet is for End Users        November 2019
+
+
    When we engage with the Internet community, we should also clearly
-   identify feedback mechanisms that are tailored to their needs (e.g.,
-   subscribing to a mailing list may not be appropriate), and assure
-   that they are well-known in those communities.
+   identify tailored feedback mechanisms (e.g., subscribing to a mailing
+   list may not be appropriate), and assure that they are well-known in
+   those communities.
 
-4.2.  Creating User-Focused Feedback Mechanisms
+   Finally, we should remember that the RFC series are Requests For
+   Comments; if there are serious implications of our work, we should
+   document them and ask for feedback from the Internet Community.
 
-   Special attention should be paid to the kinds of architectures we
+4.2.  Creating User-Focused Systems
+
+   We should pay particular attention to the kinds of architectures we
    create, and whether they encourage or discourage an Internet that
    works for end users.
 
    For example, one of the most successful Internet applications is the
    Web. One of its key implementation roles is that of the Web browser -
    called the User Agent in [RFC7230] and other specifications.  Because
-
-
-
-Nottingham                 Expires May 3, 2020                  [Page 6]
-
-Internet-Draft        The Internet is for End Users         October 2019
-
-
-   there are multiple implementations of the standards that specify a
-   Web browser, there is a natural competition between them to do just
-   that - represent the user's needs as an agent.  As a result, Web
-   browsers' interests are often well-aligned with those of their users,
+   there is more than one implementation of the standards that specify a
+   Web browser, there is a natural competition between them to do
+   carefully consider the user's needs as an agent.  As a result, Web
+   browsers' interests are better aligned with those of their users,
    creating an ecosystem that is positively user-focused.
 
    In contrast, the Internet of Things (IoT) has not yet seen the
@@ -349,11 +367,41 @@ Internet-Draft        The Internet is for End Users         October 2019
    user.  Perhaps as a result of this, that ecosystem and its users face
    serious challenges.
 
-4.3.  Identifying Negative End User Impact
+   We should also create explicit roles for users in our protocols where
+   appropriate, and respect them.  For example,
+   [I-D.nottingham-rfc7320bis] gives guidlines on how specifications
+   should extend URIs, in order to preserve their owners' control over
+   them.
 
-   At its best, our work will unambiguously promote the common social
-   good.  In some cases, we will consciously decide to be neutral and
-   open-ended, allowing the "tussle" among stakeholders to produce a
+4.3.  Designing for Positive User Outcomes
+
+   The Internet's users are heterogeneous; they have different access
+   characteristics (latency, available bandwidth, reliability), contexts
+   (economic, social, and political), and different characteristics
+   (languages spoken and read, cognitive and physical abilities).
+
+   The issues involved in serving them well are often not singular in
+   nature; they often require multiple solutions.  While the network
+   effects of a single solution might be significant, this should not
+   stop us from meeting user needs with multiple solutions if they are
+   necessary.
+
+
+
+
+Nottingham                Expires May 10, 2020                  [Page 7]
+
+Internet-Draft        The Internet is for End Users        November 2019
+
+
+   However, this is not a reason to introduce alternative mechanisms
+   that are harmful; see Section 4.5.
+
+4.4.  Identifying Negative End User Impact
+
+   At its best, our work will unambiguously promote the collective
+   social good.  In some cases, we will consciously decide to be neutral
+   and open-ended, allowing the "tussle" among stakeholders to produce a
    range of results (see [TUSSLE] for further discussion).
 
    At the very least, however, we must examine our work for negative
@@ -364,7 +412,7 @@ Internet-Draft        The Internet is for End Users         October 2019
 
    Note that "negative impact on end users" is not defined in this
    document; that is something that the relevant body (e.g., Working
-   Group) needs to discuss and come to consensus on; merely asserting
+   Group) needs to discuss and come to consensus on.  Merely asserting
    that something is harmful is not adequate.  The converse is also
    true, though; it's not permissible to avoid identifying harms, nor is
    it acceptable to ignore them when brought to our attention.
@@ -379,22 +427,12 @@ Internet-Draft        The Internet is for End Users         October 2019
    properties of a connection [RFC3724].  This does not mean that our
    responsibility to users stops there; decisions might affect users in
    other ways.  For example, data collection by various applications
-   even inside otherwise secure connections is a major problem in the
+   even inside otherwise secure connections is a major problem on the
    Internet today.  Also, inappropriate concentration of power on the
    Internet has become a concerning phenomenon - one that protocol
    design might have some influence upon.
 
-
-
-
-
-
-Nottingham                 Expires May 3, 2020                  [Page 7]
-
-Internet-Draft        The Internet is for End Users         October 2019
-
-
-4.4.  Handling Conflicting End User Needs
+4.5.  Handling Conflicting End User Needs
 
    When the needs of different end users conflict (for example, two sets
    of end users both have reasonable desires) we again should try to
@@ -403,13 +441,31 @@ Internet-Draft        The Internet is for End Users         October 2019
    For example, when a decision improves the Internet for end users in
    one jurisdiction, but at the cost of potential harm to others
    elsewhere, that is not a good tradeoff.  As such, we effectively
+
+
+
+
+Nottingham                Expires May 10, 2020                  [Page 8]
+
+Internet-Draft        The Internet is for End Users        November 2019
+
+
    design the Internet for the pessimal environment; if a user can be
-   harmed, they probably will be.
+   harmed, they probably will be, somewhere.
 
    There may be cases where genuine technical need requires compromise.
    However, such tradeoffs are carefully examined and avoided when there
    are alternate means of achieving the desired goals.  If they cannot
    be, these choices and reasoning ought to be thoroughly documented.
+
+4.6.  Deprioritising Internal Needs
+
+   There are a number of needs that are very visible to us as
+   specification authors, but should explicitly not be prioritised over
+   the needs of end users.
+
+   These include: convenience for document editors, IETF process
+   matters, and "architectural purity".
 
 5.  IANA Considerations
 
@@ -424,6 +480,10 @@ Internet-Draft        The Internet is for End Users         October 2019
 7.  References
 
 7.1.  Informative References
+
+   [I-D.nottingham-rfc7320bis]
+              Nottingham, M., "URI Design and Ownership", draft-
+              nottingham-rfc7320bis-02 (work in progress), October 2019.
 
    [RFC0001]  Crocker, S., "Host Software", RFC 1, DOI 10.17487/RFC0001,
               April 1969, <https://www.rfc-editor.org/info/rfc1>.
@@ -441,13 +501,9 @@ Internet-Draft        The Internet is for End Users         October 2019
 
 
 
-
-
-
-
-Nottingham                 Expires May 3, 2020                  [Page 8]
+Nottingham                Expires May 10, 2020                  [Page 9]
 
-Internet-Draft        The Internet is for End Users         October 2019
+Internet-Draft        The Internet is for End Users        November 2019
 
 
    [RFC6973]  Cooper, A., Tschofenig, H., Aboba, B., Peterson, J.,
@@ -501,17 +557,20 @@ Internet-Draft        The Internet is for End Users         October 2019
 
 
 
-Nottingham                 Expires May 3, 2020                  [Page 9]
+Nottingham                Expires May 10, 2020                 [Page 10]
 
-Internet-Draft        The Internet is for End Users         October 2019
+Internet-Draft        The Internet is for End Users        November 2019
 
 
 Appendix A.  Acknowledgements
 
    This document was influenced by many discussions, both inside and
    outside of the IETF and IAB.  In particular, Edward Snowden's
-   comments regarding the priority of end users at IETF 93 and the
-   WHATWG's Priority of Constituencies for HTML were both influential.
+   comments regarding the priority of end users at IETF 93 and the HTML5
+   Priority of Constituencies were both influential.
+
+   Thanks to Sandra Braman for her insightful overview of the RFC series
+   from a legal perspective.
 
    Many people gave feedback and input, including Harald Alvestrand,
    Mohamed Boucadair, Stephen Farrell, Joe Hildebrand, Lee Howard, Russ
@@ -554,7 +613,4 @@ Author's Address
 
 
 
-
-
-
-Nottingham                 Expires May 3, 2020                 [Page 10]
+Nottingham                Expires May 10, 2020                 [Page 11]
