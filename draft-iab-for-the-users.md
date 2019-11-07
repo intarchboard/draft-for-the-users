@@ -90,7 +90,7 @@ In these situations, when one of those parties is an "end user" of the Internet 
 
 In this document, "end users," means non-technical users whose activities IETF standards are designed to support, sometimes indirectly. Thus, the end user of a protocol to manage routers is not a router administrator; it is the people using the network that the router operates within.
 
-End users are not necessarily a homogenous group; they might have different views of how the Internet should work, and might occupy several roles, such as a seller, buyer, publisher, reader, service provider and consumer. An end user might be browsing the Web, monitoring remote equipment, playing a game, video conferencing with colleagues, sending messages to friends, or performing an operation in a remote surgery theatre.
+End users are not necessarily a homogenous group; they might have different views of how the Internet should work, and might occupy several roles, such as a seller, buyer, publisher, reader, service provider and consumer. An end user might be browsing the Web, monitoring remote equipment, playing a game, video conferencing with colleagues, sending messages to friends, or performing an operation in a remote surgery theatre. They might be "at the keyboard", or represented by software indirectly (e.g., as a daemon).
 
 Likewise, an individual end user might have many interests (e.g., privacy, security, flexibility, reachability) that are sometimes in tension.
 
@@ -130,13 +130,13 @@ The IETF community does not have any unique insight into what is "good for end u
 
 At the same time, we do have a culture of considerable deference to a broader "Internet community" in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have a positive impact upon them.
 
-Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community, soliciting input and considering the issues raised there.
+Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community. We should enter into a dialogue about not only the technical concerns that are well-represented in the IETF but also the political, social and economic concerns that it engenders, and that are better represented elsewhere.
 
 The IETF community faces significant hurdles in doing so. Our work is specialised and often esoteric, and standard processes often occur on very long timescales. Affected parties are rarely technical experts, and their experience of the Internet is often based upon incomplete (and sometimes inaccurate) models. Often, even when we try to engage a broader audience, their participation is minimal -- until a change affects someone in a way they don't like. Surprising the Internet community is rarely a good outcome.
 
-While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often profound, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.
+Government representatives sometimes participate in the IETF community. While this is welcome, it should not be taken as automatically representative of end users elsewhere, or even all end users in the relevant jurisdiction. Furthermore, what is desirable in one jurisdiction (or at least to its administrators) might be detrimental in others (see {{conflict}}).
 
-Government representatives sometimes participate in the IETF community. While this is welcome, it should not be taken as automatically representative of end users elsewhere, or even all end users in the relevant jurisdiction.
+While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often profound, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.
 
 A promising approach to help fill these gaps is to identify and engage with specifically affected communities; for example, one or more industry associations, user groups, or a set of individuals, though we can't of course formally ensure that they are appropriately representative.
 
@@ -151,13 +151,24 @@ When we engage with the Internet community, we should also clearly identify tail
 Finally, we should remember that the RFC series are Requests For Comments; if there are serious implications of our work, we should document them and ask for feedback from the Internet Community.
 
 
-## Creating User-Focused Feedback Mechanisms
+## Creating User-Focused Systems
 
 We should pay particular attention to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.
 
 For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser -- called the User Agent in {{?RFC7230}} and other specifications. Because there is more than one implementation of the standards that specify a Web browser, there is a natural competition between them to do carefully consider the user's needs as an agent. As a result, Web browsers' interests are better aligned with those of their users, creating an ecosystem that is positively user-focused.
 
 In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role for representing the needs of the end user. Perhaps as a result of this, that ecosystem and its users face serious challenges.
+
+We should also create explicit roles for users in our protocols where appropriate, and respect them. For example, {{?I-D.nottingham-rfc7320bis}} gives guidlines on how specifications should extend URIs, in order to preserve their owners' control over them.
+
+
+## Designing for Positive User Outcomes
+
+The Internet's users are heterogeneous; they have different access characteristics (latency, available bandwidth, reliability), contexts (economic, social, and political), and different characteristics (languages spoken and read, cognitive and physical abilities).
+
+The issues involved in serving them well are often not singular in nature; they often require multiple solutions. While the network effects of a single solution might be significant, this should not stop us from meeting user needs with multiple solutions if they are necessary.
+
+However, this is not a reason to introduce alternative mechanisms that are harmful; see {{conflict}}.
 
 
 ## Identifying Negative End User Impact
@@ -173,14 +184,20 @@ The IAB and IETF have already established a body of guidance for situations wher
 Much of that advice has focused on maintaining the end-to-end properties of a connection {{?RFC3724}}. This does not mean that our responsibility to users stops there; decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem on the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon -- one that protocol design might have some influence upon.
 
 
-## Handling Conflicting End User Needs
+## Handling Conflicting End User Needs {#conflict}
 
 When the needs of different end users conflict (for example, two sets of end users both have reasonable desires) we again should try to minimise negative impact.
 
-For example, when a decision improves the Internet for end users in one jurisdiction, but at the cost of potential harm to others elsewhere, that is not a good tradeoff. As such, we effectively design the Internet for the pessimal environment; if a user can be harmed, they probably will be.
+For example, when a decision improves the Internet for end users in one jurisdiction, but at the cost of potential harm to others elsewhere, that is not a good tradeoff. As such, we effectively design the Internet for the pessimal environment; if a user can be harmed, they probably will be, somewhere.
 
 There may be cases where genuine technical need requires compromise. However, such tradeoffs are carefully examined and avoided when there are alternate means of achieving the desired goals. If they cannot be, these choices and reasoning ought to be thoroughly documented.
 
+
+## Deprioritising Internal Needs
+
+There are a number of needs that are very visible to us as specification authors, but should explicitly not be prioritised over the needs of end users.
+
+These include: convenience for document editors, IETF process matters, and "architectural purity".
 
 
 # IANA Considerations
@@ -196,6 +213,8 @@ This document does not have any direct security impact; however, failing to prio
 
 # Acknowledgements
 
-This document was influenced by many discussions, both inside and outside of the IETF and IAB. In particular, Edward Snowden's comments regarding the priority of end users at IETF 93 and the WHATWG's Priority of Constituencies for HTML were both influential.
+This document was influenced by many discussions, both inside and outside of the IETF and IAB. In particular, Edward Snowden's comments regarding the priority of end users at IETF 93 and the HTML5 Priority of Constituencies were both influential.
+
+Thanks to Sandra Braman for her insightful overview of the RFC series from a legal perspective.
 
 Many people gave feedback and input, including Harald Alvestrand, Mohamed Boucadair, Stephen Farrell, Joe Hildebrand, Lee Howard, Russ Housley, Niels ten Oever, Mando Rachovitsa, Martin Thomson, Brian Trammell, John Klensin, Eliot Lear, Ted Hardie, and Jari Arkko.
