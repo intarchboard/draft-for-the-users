@@ -159,7 +159,7 @@ For example, one of the most successful Internet applications is the Web. One of
 
 In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role for representing the needs of the end user. Perhaps as a result of this, that ecosystem and its users face serious challenges.
 
-We should also create explicit roles for users in our protocols where appropriate, and respect them. For example, {{?I-D.nottingham-rfc7320bis}} gives guidlines on how specifications should extend URIs, in order to preserve their owners' control over them.
+We should also create explicit roles for users in our protocols where appropriate, and respect them.
 
 
 ## Designing for Positive User Outcomes
