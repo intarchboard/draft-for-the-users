@@ -215,6 +215,4 @@ This document does not have any direct security impact; however, failing to prio
 
 This document was influenced by many discussions, both inside and outside of the IETF and IAB. In particular, Edward Snowden's comments regarding the priority of end users at IETF 93 and the HTML5 Priority of Constituencies were both influential.
 
-Thanks to Sandra Braman for her insightful overview of the RFC series from a legal perspective.
-
 Many people gave feedback and input, including Harald Alvestrand, Mohamed Boucadair, Stephen Farrell, Joe Hildebrand, Lee Howard, Russ Housley, Niels ten Oever, Mando Rachovitsa, Martin Thomson, Brian Trammell, John Klensin, Eliot Lear, Ted Hardie, and Jari Arkko.
