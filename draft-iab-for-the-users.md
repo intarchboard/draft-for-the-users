@@ -197,7 +197,7 @@ There may be cases where genuine technical need requires compromise. However, su
 
 There are a number of needs that are very visible to us as specification authors, but should explicitly not be prioritised over the needs of end users.
 
-These include: convenience for document editors, IETF process matters, and "architectural purity".
+These include: convenience for document editors, IETF process matters, and "architectural purity" for its own sake.
 
 
 # IANA Considerations
