@@ -56,7 +56,7 @@ This document explains why the IAB believes the IETF should consider end users a
 
 --- note_Note_to_Readers
 
-The issues list for this draft can be found at <https://github.com/intarchboard/for-the-users/issuess>.
+The issues list for this draft can be found at <https://github.com/intarchboard/for-the-users/issues>.
 
 The most recent (often, unpublished) draft is at <https://intarchboard.github.io/for-the-users/>.
 
