@@ -101,7 +101,7 @@ While such less-direct interactions between people and the Internet may be harde
 
 # Why The IETF Should Prioritise End Users {#why}
 
-The IETF has focused on user needs since {{?RFC0001}}, which stated that "One of our goals must be to stimulate the immediate and easy use by a wide class of users."
+Even before the IETF was established, the Internet technical community has focused on user needs since at least {{?RFC0001}}, which stated that "One of our goals must be to stimulate the immediate and easy use by a wide class of users."
 
 And, while we specialise in technical matters, the IETF is not neutral about the purpose of its work in developing the Internet; in "A Mission Statement for the IETF" {{?RFC3935}}, the definitions include:
 
