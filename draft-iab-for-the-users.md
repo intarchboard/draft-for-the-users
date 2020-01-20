@@ -162,15 +162,6 @@ In contrast, the Internet of Things (IoT) has not yet seen the emergence of a na
 We should also create explicit roles for users in our protocols where appropriate, and respect them.
 
 
-## Designing for Positive User Outcomes
-
-The Internet's users are heterogeneous; they have different access characteristics (latency, available bandwidth, reliability), contexts (economic, social, and political), and different characteristics (languages spoken and read, cognitive and physical abilities).
-
-The issues involved in serving them well are often not singular in nature; they often require multiple solutions. While the network effects of a single solution might be significant, this should not stop us from meeting user needs with multiple solutions if they are necessary.
-
-However, this is not a reason to introduce alternative mechanisms that are harmful; see {{conflict}}.
-
-
 ## Identifying Negative End User Impact
 
 At its best, our work will unambiguously promote the collective social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see {{TUSSLE}} for further discussion).
