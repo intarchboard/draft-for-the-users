@@ -1,578 +1,1209 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
+<html lang="en" class="Internet-Draft">
+<head>
+<meta charset="utf-8">
+<meta content="Common,Latin" name="scripts">
+<meta content="initial-scale=1.0" name="viewport">
+<title>The Internet is for End Users</title>
+<meta content="Mark Nottingham" name="author">
+<meta content="
+       This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done. 
+    " name="description">
+<meta content="xml2rfc 2.34.0" name="generator">
+<meta content="stakeholder" name="keyword">
+<meta content="draft-iab-for-the-users-latest" name="ietf.draft">
+<link href="draft-iab-for-the-users.xml" rel="alternate" type="application/rfc+xml">
+<link href="#copyright" rel="license">
+<style type="text/css">@import url('https://martinthomson.github.io/i-d-template/fonts.css');
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-
-  <title>The Internet is for End Users</title>
-
-  
-<style type="text/css">/*<![CDATA[*/
-
+html {
+  --background-color: #fff;
+  --text-color: #222;
+  --title-color: #191919;
+  --link-color: #2a6496;
+  --highlight-color: #f9f9f9;
+  --line-color: #eee;
+  --small-font-size: 14.5px;
+}
 body {
-  font: 16px "Helvetica Neue","Open Sans",Helvetica,Calibri,sans-serif;
-  color: #333;
-  font-size-adjust: 0.5;
-  line-height: 24px;
-  margin: 75px auto;
   max-width: 624px;
+  margin: 75px auto;
   padding: 0 5px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font: 16px/22px "Lora", serif;
+  scroll-behavior: smooth;
 }
 
-.title, .filename, h1, h2, h3, h4, h5 {
-  font: 16px "Roboto Condensed","Helvetica Neue","Open Sans",Helvetica,Calibri,sans-serif;
-  font-size-adjust: 0.5;
-  font-weight: bold;
-  color: #333;
-  line-height: 100%;
-  margin: 1.2em 0 0.3em;
-}
-.title, #rfc\.title h1 { font-size: 32px; }
-h1, section h1, h2, section h2, section h3, nav h2 { font-size: 20px; }
-h3, section h4, h4, section h5 { font-size: 16px; }
-h1 a[href], h2 a[href], h3 a[href], h4 a[href] {
-  color: #333;
-}
-
-table {
-  margin-left: 0em;
-  border-collapse: collapse;
-}
-th {
-  text-align: left;
-  border-bottom: 2px solid #ddd;
-}
-td {
-  border-top: 1px solid #ddd;
-  vertical-align: top;
-}
-tr:nth-child(2n+1) > td,
-tr:nth-child(2n+1) > th {
-  background-color: #f9f9f9;
-}
-td.reference {
-  max-width: 200px;
-  border-top: none;
-  padding-right: 1em;
-}
-.right {
-  text-align: right;
-}
-
-
-table.header, table#rfc\.headerblock {
-  width: 100%;
-}
-table.header td, table#rfc\.headerblock td {
-  border: none;
-  background-color: transparent;
-  color: black;
-  padding: 0;
-}
-.filename {
-  display: block;
-  color: rgb(119, 119, 119);
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 100%;
-  margin: 10px 0 32px;
-}
-#rfc\.abstract+p, #rfc\.abstract+p code, #rfc\.abstract+p samp, #rfc\.abstract+p tt {
-  font-size: 20px;
-  line-height: 28px;
-}
-
-samp, tt, code, pre, span.tt {
-  font-size: 13.5px;
-  font-family: Consolas, monospace;
-  font-size-adjust: none;
-}
-pre {
-  background-color: #eee;
-  border: 1px solid #ddd;
-  overflow-x: auto;
-  padding: 5px;
-  margin: 5px;
-}
-.figure, caption {
-  font-style: italic;
-  margin: 0 1.5em;
-  text-align: left;
-}
-
-address {
-  margin: 16px 2px;
-  line-height: 20px;
-}
-.vcard {
-  font-style: normal;
-}
-.vcardline {
-  display: block;
-}
-.vcardline .fn, address b {
-  font-weight: normal;
-}
-.vcardline .hidden {
+.ears {
   display: none;
 }
 
-dl {
+/* headings */
+#title, h1, h2, h3, h4, h5, h6 {
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: 600;
+  margin: 0.8em 0 0.3em;
+  font-size-adjust: 0.5;
+  color: var(--title-color);
+}
+#title {
+  padding: 1em 0 0.2em;
+  font-size: 32px;
+  line-height: 40px;
+  clear: both;
+}
+h1, h2, h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+h4, h5, h6 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* general structure */
+.author {
+  padding-bottom: 0.3em;
+}
+#abstract+p, #abstract+p code, #abstract+p samp, #abstract+p tt {
+  font-size: 18px;
+  line-height: 24px;
+}
+p {
+  padding: 0;
+  margin: 0.5em 0;
+  text-align: left;
+}
+div, span {
+  position: relative;
+}
+div {
+  margin: 0;
+}
+.alignRight.art-text {
+  background-color: var(--highlight-color);
+  border: 1px solid var(--line-color);
+  border-radius: 3px;
+  padding: 0.5em 1em 0;
+  margin-bottom: 0.5em;
+}
+.alignRight.art-text pre {
+  padding: 0;
+  width: auto;
+}
+.alignRight {
+  margin: 1em 0;
+}
+.alignRight > *:first-child {
+  border: none;
+  margin: 0;
+  float: right;
+  clear: both;
+}
+.alignRight > *:nth-child(2) {
+  clear: both;
+  display: block;
+  border: none;
+}
+svg {
+  display: block;
+}
+.alignCenter.art-text {
+  background-color: var(--highlight-color);
+  border: 1px solid var(--line-color);
+  border-radius: 3px;
+  padding: 0.5em 1em 0;
+  margin-bottom: 0.5em;
+}
+.alignCenter.art-text pre {
+  padding: 0;
+  width: auto;
+}
+.alignCenter {
+  margin: 1em 0;
+}
+.alignCenter > *:first-child {
+  border: none;
+  /* this isn't optimal, but it's an existence proof.  PrinceXML doesn't
+     support flexbox yet.
+  */
+  display: table;
+  margin: 0 auto;
+}
+
+/* lists */
+ol, ul {
+  padding: 0;
+  margin: 0 0 1em 2em;
+}
+ol ol, ul ul, ol ul, ul ol {
   margin-left: 1em;
 }
-dl.dl-horizontal: {
-  margin-left: 0;
+li {
+  margin: 0 0 0.25em 0;
+}
+.ulCompact li {
+  margin: 0;
+}
+ul.empty, .ulEmpty {
+  list-style-type: none;
+}
+ul.empty li, .ulEmpty li {
+  margin-top: 0.5em;
+}
+ul.compact, .ulCompact,
+ol.compact, .olCompact {
+  line-height: 100%;
+  margin: 0 0 0 2em;
+}
+
+/* definition lists */
+dl {
 }
 dl > dt {
   float: left;
   margin-right: 1em;
 }
-dl.nohang > dt {
-  float: none;
-}
 dl > dd {
-  margin-bottom: .5em;
+  margin-bottom: .8em;
+  min-height: 1.3em;
 }
-dl.compact > dd {
+dl.compact > dd, .dlCompact > dd {
   margin-bottom: 0em;
 }
 dl > dd > dl {
   margin-top: 0.5em;
   margin-bottom: 0em;
 }
-ul.empty {
-  list-style-type: none;
-}
-ul.empty li {
-  margin-top: .5em;
-}
 
-hr {
-  border: 0;
-  border-top: 1px solid #eee;
-}
-hr.noprint {
-  display: none;
-}
-
-a {
+/* links */
+a, a[href].selfRef:hover {
   text-decoration: none;
 }
+a[href].selfRef {
+  color: var(--text-color);
+}
 a[href] {
-  color: #2a6496;
+  color: var(--link-color);
 }
 a[href]:hover {
-  background-color: #eee;
+  text-decoration: underline;
+}
+a[href].selfRef:hover {
+  background-color: var(--highlight-color);
 }
 
-p, ol, ul, li {
-  padding: 0;
+/* Figures */
+tt, code, pre {
+  background-color: var(--highlight-color);
+  font: 14px/22px 'Oxygen Mono', monospace;
 }
-p {
+pre {
+  border: 1px solid var(--line-color);
+  line-height: 17px;
+  margin: 5px;
+  padding: 5px;
+}
+img {
+  max-width: 100%;
+}
+figure {
   margin: 0.5em 0;
 }
-ol, ul {
-  margin: 0.2em 0 0.2em 2em;
+figure blockquote {
+  margin: 0.8em 0.4em 0.4em;
 }
-li {
-  margin: 0.2em 0;
+figcaption, caption {
+  font-style: italic;
+  margin: 0.5em 1.5em;
+  text-align: left;
 }
-address {
-  font-style: normal;
+@media screen {
+  pre {
+    display: inline-block;
+    overflow-x: auto;
+    max-width: 100%;
+    width: calc(100% - 22px - 1em);
+  }
+  figure pre {
+    display: block;
+    width: calc(100% - 25px);
+  }
+  pre + .pilcrow {
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-bottom: 8px;
+  }
 }
 
-ul.toc ul {
-  margin: 0 0 0 2em;
+/* aside, blockquote */
+aside, blockquote {
+  margin-left: 0;
+  padding: 0 2em;
+  font-style: italic;
 }
-ul.toc li {
-  list-style: none;
+blockquote {
+  background-color: var(--highlight-color);
+  border: 1px solid var(--line-color);
+  border-radius: 3px;
+  margin: 1em 0;
+}
+cite {
+  display: block;
+  text-align: right;
+  font-style: italic;
+}
+
+/* tables */
+table {
+  width: 100%;
+  margin: 0 0 1em;
+  border-collapse: collapse;
+  border: 1px solid var(--line-color);
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5em 0.75em;
+}
+th {
+  text-align: left;
+  background-color: #eee;
+}
+tr:nth-child(2n) > td {
+  background-color: var(--background-color);
+}
+tr:nth-child(2n+1) > td {
+  background-color: var(--highlight-color);
+}
+thead+tbody tr:nth-child(2n) > td {
+  background-color: var(--highlight-color);
+}
+thead+tbody tr:nth-child(2n+1) > td {
+  background-color: var(--background-color);
+}
+table caption {
+  font-style: italic;
+  margin: 0.3em 0;
+  padding: 0;
+  text-align: left;
+}
+table p {
+  /* XXX to avoid bottom margin on table row signifiers. If paragraphs should
+     be allowed within tables more generally, it would be far better to select on a class. */
   margin: 0;
 }
 
-@media screen and (min-width: 924px) {
-  body {
-    padding-right: 350px;
+/* pilcrow */
+a.pilcrow {
+  margin-left: 3px;
+  visibility: hidden;
+  user-select: none;
+}
+a.pilcrow[href] { color: #ddd; }
+a.pilcrow[href]:hover { text-decoration: none; }
+@media screen {
+  :hover > a.pilcrow {
+    visibility: visible;
   }
-  body>ul.toc, body>#rfc\.toc {
+  a.pilcrow:hover {
+    background-color: transparent;
+  }
+}
+
+/* misc */
+hr {
+  border: 0;
+  border-top: 1px solid var(--line-color);
+}
+.bcp14 {
+  font-variant: small-caps;
+}
+
+.role {
+  font-variant: all-small-caps;
+}
+
+/* info block */
+#identifiers {
+  margin: 0;
+  font-size: var(--small-font-size);
+  line-height: 18px;
+  --identifier-width: 8em;
+}
+#identifiers dt {
+  width: var(--identifier-width);
+  margin: 0;
+  clear: left;
+  float: left;
+  text-align: right;
+}
+#identifiers dd {
+  margin: 0 0 0 calc(1em + var(--identifier-width));
+  min-width: 5em;
+}
+#identifiers .authors .author {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+#identifiers .authors .org {
+  font-style: italic;
+}
+
+/* The prepared/rendered info at the very bottom of the page */
+.docInfo {
+  color: #999;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 2em;
+}
+.docInfo .prepared {
+  float: left;
+}
+.docInfo .prepared {
+  float: right;
+}
+
+/* table of contents */
+#toc {
+  padding: 0.75em 0 2em 0;
+  margin-bottom: 1em;
+}
+#toc nav ul {
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  list-style: none;
+}
+#toc nav li {
+  line-height: 1.3em;
+  margin: 0.75em 0;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+/* references */
+.references dt {
+  text-align: right;
+  font-weight: bold;
+  min-width: 7em;
+}
+.references dd {
+  margin-left: 8em;
+  overflow: auto;
+}
+
+.refInstance {
+  margin-bottom: 1.25em;
+}
+
+.references .ascii {
+  margin-bottom: 0.25em;
+}
+
+/* index */
+.index ul {
+  margin: 0 0 0 1em;
+  padding: 0;
+  list-style: none;
+}
+.index ul ul {
+  margin: 0;
+}
+.index li {
+  margin: 0;
+  text-indent: -2em;
+  padding-left: 2em;
+  padding-bottom: 5px;
+}
+.indexIndex {
+  margin: 0.5em 0 1em;
+}
+.index a {
+  font-weight: 700;
+}
+/* make the index two-column on all but the smallest screens */
+@media (min-width: 600px) {
+  .index ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  .index ul ul {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
+/* authors */
+address.vcard {
+  font-style: normal;
+  margin: 1em 0;
+}
+address.vcard .nameRole {
+  font-weight: 700;
+  margin-left: 0;
+}
+address.vcard .label {
+  margin: 0.5em 0;
+}
+address.vcard .type {
+  display: none;
+}
+.alternative-contact {
+  margin: 1.5em 0 1em;
+}
+hr.addr {
+  border-top: 1px dashed;
+  margin: 0;
+  color: #ddd;
+  max-width: calc(100% - 16px);
+}
+@media (min-width: 600px) {
+  #authors-addresses {
+    display: relative;
+    padding: 32px 0 0;
+    column-count: 2;
+    column-gap: 20px;
+  }
+  #name-authors-addresses {
+    position: absolute;
+    top: 0px;
+    column-span: all;
+  }
+  /* hack for break-inside: avoid-column */
+  #authors-addresses address {
+    display: inline-block;
+  }
+}
+
+/* temporary notes */
+.rfcEditorRemove::before {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2em;
+  padding: 0.2em;
+  content: "The RFC Editor will remove this note";
+  color: #b76427;
+  background-color: rgba(249, 232, 105, 0.3);
+}
+.rfcEditorRemove {
+  position: relative;
+  padding-top: 1.8em;
+  background-color: rgba(249, 232, 105, 0.3);
+  border-radius: 3px;
+}
+.cref {
+  background-color: rgba(249, 232, 105, 0.3);
+  padding: 2px 4px;
+}
+.crefSource {
+  font-style: italic;
+}
+/* alternative layout for smaller screens */
+@media screen and (max-width: 953px) {
+  #toc {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.6;
+  }
+  #toc.active {
+      opacity: 1;
+  }
+  #toc h2 {
+    margin: 0;
+    padding: 2px 0 2px 6px;
+    padding-right: 1em;
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 190px;
+    text-align: right;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+  }
+  #toc h2::before { /* css hamburger */
+    float: right;
+    position: relative;
+    width: 1em;
+    height: 1px;
+    left: -164px;
+    margin: 8px 0 0 0;
+    background: white none repeat scroll 0 0;
+    box-shadow: 0 4px 0 0 white, 0 8px 0 0 white;
+    content: "";
+  }
+  #toc nav {
+    display: none;
+    background-color: var(--background-color);
+    padding: 0.5em 1em 1em;
+    overflow: auto;
+    overscroll-behavior: contain;
+    height: calc(100vh - 48px);
+    border-left: 1px solid #ddd;
+  }
+  #toc.active nav {
+    display: block;
+  }
+  /* Make the collapsed ToC header render white on gray also when it's a link */
+  #toc h2 a,
+  #toc h2 a:link,
+  #toc h2 a:focus,
+  #toc h2 a:hover,
+  #toc a.toplink,
+  #toc a.toplink:hover {
+    color: white;
+    background-color: #444;
+    text-decoration: none;
+  }
+  #toc a.toplink {
+    margin-top: 2px;
+  }
+}
+
+/* alternative layout for wide screens */
+@media screen and (min-width: 954px) {
+  body {
+    padding-right: 380px;
+  }
+  #toc {
     position: fixed;
     bottom: 0;
     right: 0;
-    right: calc(50vw - 500px);
-    width: 300px;
+    right: calc(50vw - 480px);
+    width: 312px;
+    margin: 0;
+    padding: 0;
     z-index: 1;
+  }
+  #toc h2 {
+    margin: 0;
+    padding: 0.25em 1em 1em 0;
+  }
+  #toc nav {
+    display: block;
+    height: calc(90vh - 84px);
+    bottom: 0;
+    padding: 0.5em 0 2em;
     overflow: auto;
     overscroll-behavior: contain;
+    scrollbar-width: thin;
   }
-  body>#rfc\.toc {
-    top: 55px;
+  #toc nav > ul  {
+    margin-bottom: 2em;
   }
-  body>ul.toc {
-    top: 100px;
-  }
-
-  ul.toc {
+  #toc ul {
     margin: 0 0 0 4px;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: var(--small-font-size);
   }
-  ul.toc ul {
-    margin-left: 1.2em;
+  #toc ul p, #toc ul li {
+    margin: 2px 0;
+    line-height: 22px;
+  }
+  img { /* future proofing */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* pagination */
+@media print {
+  body {
+    width: 100%;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  #n-copyright-notice {
+    border-bottom: none;
+  }
+  #toc, #n-introduction {
+    page-break-before: always;
+  }
+  #toc {
+    border-top: none;
+    padding-top: 0;
+  }
+  figure, pre {
+    page-break-inside: avoid;
+  }
+  figure {
+    overflow: scroll;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  h2+*, h3+*, h4+*, h5+*, h6+* {
+    page-break-before: avoid;
+  }
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 10pt;
+  }
+  table {
+    border: 1px solid #ddd;
+  }
+  td {
+    border-top: 1px solid #ddd;
   }
 }
 
-.github-fork-ribbon-wrapper {
-  display: none;
-}
-@media screen and (min-width: 800px) {
-  /* "Fork me on GitHub" CSS ribbon based on
-   * https://github.com/simonwhitaker/github-fork-ribbon-css
-   */
-  .github-fork-ribbon {
-    position: absolute;
-    padding: 2px 0;
-    background-color: #a00;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
-    font: 700 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-    pointer-events: auto;
-
-    top: 38px;
-    right: -45px;
-
-    transform: rotate(45deg);
+@page :first {
+  padding-top: 0;
+  @top-left {
+    content: normal;
+    border: none;
   }
-
-  .github-fork-ribbon a[href],
-  .github-fork-ribbon a[href]:hover {
-    color: #fff;
-    background-color: transparent;
-    text-decoration: none;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
-    text-align: center;
-
-    width: 190px;
-    line-height: 18px;
-
-    display: inline-block;
-    padding: 2px 0;
-
-    border: 1.5px dotted #fff;
-    border-color: rgba(255, 255, 255, 0.6);
+  @top-center {
+    content: normal;
+    border: none;
   }
-
-  .github-fork-ribbon-wrapper {
-    display: block;
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    overflow: hidden;
-    top: 0; right: 0;
-    z-index: 2;
-    pointer-events: none;
+  @top-right {
+    content: normal;
+    border: none;
   }
 }
-@media screen and (min-width: 1000px) {
-  .github-fork-ribbon-wrapper {
-    position: fixed;
+
+@page {
+  size: A4;
+  margin-bottom: 45mm;
+  padding-top: 20px;
+}
+
+/* Changes introduced to fix issues found during implementation */
+
+/* Separate body from document info even without intervening H1 */
+section {
+  clear: both;
+}
+
+/* Top align author divs, to avoid names without organization dropping level with org names */
+.author {
+  vertical-align: top;
+}
+
+/* Style section numbers with more space between number and title */
+.section-number {
+  padding-right: 0.5em;
+}
+
+/* Add styling for a link in the ToC that points to the top of the document */
+a.toplink {
+  float: right;
+  margin: 8px 0.5em 0;
+}
+
+/* Fix the dl styling to match the RFC 7992 attributes */
+dl > dt,
+dl.dlParallel > dt {
+  float: left;
+  margin-right: 1em;
+}
+dl.dlNewline > dt {
+  float: none;
+}
+
+/* Provide styling for table cell text alignment */
+table td.text-left,
+table th.text-left {
+  text-align: left;
+}
+table td.text-center,
+table th.text-center {
+  text-align: center;
+}
+table td.text-right,
+table th.text-right {
+  text-align: right;
+}
+
+/* Make the alternative author contact information look less like just another
+   author, and group it closer with the primary author contact information */
+.alternative-contact {
+  margin: 0.5em 0 0.25em 0;
+}
+address .non-ascii {
+  margin: 0 0 0 2em;
+}
+
+/* With it being possible to set tables with alignment
+  left, center, and right, { width: 100%; } does not make sense */
+table {
+  width: auto;
+}
+
+/* Avoid reference text that sits in a block with very wide left margin,
+   because of a long floating dt label.*/
+.references dd {
+  overflow: visible;
+}
+
+/* Control caption placement */
+caption {
+  caption-side: bottom;
+}
+
+/* Limit the width of the author address vcard, so names in right-to-left
+   script don't end up on the other side of the page. */
+
+address.vcard {
+  max-width: 20em;
+  margin-right: auto;
+}
+
+/* For address alignment dependent on LTR or RTL scripts */
+address div.left {
+  text-align: left;
+}
+address div.right {
+  text-align: right;
+}
+
+/* Provide table alignment support.  We can't use the alignX classes above
+   since they do unwanted things with caption and other styling. */
+table.right {
+ margin-left: auto;
+ margin-right: 0;
+}
+table.center {
+ margin-left: auto;
+ margin-right: auto;
+}
+table.left {
+ margin-left: 0;
+ margin-right: auto;
+}
+
+/* Give the table caption label the same styling as the figcaption */
+
+@media print {
+  .toplink {
+    display: none;
   }
-/*]]>*/</style>
-<meta name="viewport" content="initial-scale=1.0">
 
+  /* avoid overwriting the top border line with the ToC header */
+  #toc {
+    padding-top: 1px;
+  }
 
-  <link href="#rfc.toc" rel="Contents">
-<link href="#rfc.section.1" rel="Chapter" title="1 Introduction">
-<link href="#rfc.section.2" rel="Chapter" title="2 What Are &#8220;End Users&#8221;?">
-<link href="#rfc.section.3" rel="Chapter" title="3 Why The IETF Should Prioritise End Users">
-<link href="#rfc.section.4" rel="Chapter" title="4 How The IETF Can Prioritise End Users">
-<link href="#rfc.section.4.1" rel="Chapter" title="4.1 Engaging the Internet Community">
-<link href="#rfc.section.4.2" rel="Chapter" title="4.2 Creating User-Focused Systems">
-<link href="#rfc.section.4.3" rel="Chapter" title="4.3 Designing for Positive User Outcomes">
-<link href="#rfc.section.4.4" rel="Chapter" title="4.4 Identifying Negative End User Impact">
-<link href="#rfc.section.4.5" rel="Chapter" title="4.5 Handling Conflicting End User Needs">
-<link href="#rfc.section.4.6" rel="Chapter" title="4.6 Deprioritising Internal Needs">
-<link href="#rfc.section.5" rel="Chapter" title="5 IANA Considerations">
-<link href="#rfc.section.6" rel="Chapter" title="6 Security Considerations">
-<link href="#rfc.references" rel="Chapter" title="7 Informative References">
-<link href="#rfc.appendix.A" rel="Chapter" title="A Acknowledgements">
-<link href="#rfc.authors" rel="Chapter">
+  /* Avoid page breaks inside dl and author address entries */
+  dd {
+    page-break-before: avoid;
+  }
+  .vcard {
+    page-break-inside: avoid;
+  }
 
-
-  <meta name="generator" content="xml2rfc version 2.34.0 - https://tools.ietf.org/tools/xml2rfc" />
-  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
-
-  <meta name="dct.creator" content="Nottingham, M." />
-  <meta name="dct.identifier" content="urn:ietf:id:draft-iab-for-the-users-latest" />
-  <meta name="dct.issued" scheme="ISO8601" content="2020-20" />
-  <meta name="dct.abstract" content="This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done." />
-  <meta name="description" content="This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done." />
-
+}
+/* Tweak the bcp14 keyword presentation */
+.bcp14 {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+</style>
+<link href="rfc-local.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-
-  <table class="header">
-    <tbody>
-    
-    	<tr>
-<td class="left">Internet Architecture Board (IAB)</td>
-<td class="right">M. Nottingham</td>
-</tr>
-<tr>
+<script src="metadata.min.js"></script>
+<table class="ears">
+<thead><tr>
 <td class="left">Internet-Draft</td>
-<td class="right">January 20, 2020</td>
-</tr>
-<tr>
-<td class="left">Intended status: Informational</td>
-<td class="right"></td>
-</tr>
-<tr>
-<td class="left">Expires: July 23, 2020</td>
-<td class="right"></td>
-</tr>
-
-    	
-    </tbody>
-  </table>
-
-  <p class="title">The Internet is for End Users<br />
-  <span class="filename">draft-iab-for-the-users-latest</span></p>
-  
-  <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
-<p>This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done.</p>
-<h1><a>Note to Readers</a></h1>
-<p>The issues list for this draft can be found at <a href="https://github.com/intarchboard/for-the-users/issues">https://github.com/intarchboard/for-the-users/issues</a>.</p>
-<p>The most recent (often, unpublished) draft is at <a href="https://intarchboard.github.io/for-the-users/">https://intarchboard.github.io/for-the-users/</a>.</p>
-<p>Recent changes are listed at <a href="https://github.com/intarchboard/for-the-users/commits/master">https://github.com/intarchboard/for-the-users/commits/master</a>.</p>
-<p>See also the draft&#8217;s current status in the IETF datatracker, at <a href="https://datatracker.ietf.org/doc/draft-iab-for-the-users/">https://datatracker.ietf.org/doc/draft-iab-for-the-users/</a>.</p>
-<h1 id="rfc.status"><a href="#rfc.status">Status of This Memo</a></h1>
-<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
-<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
-<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
-<p>This Internet-Draft will expire on July 23, 2020.</p>
-<h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
-<p>Copyright (c) 2020 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
-<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.</p>
-
-  
-  <hr class="noprint" />
-  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
-  <ul class="toc">
-
-  	<li>1.   <a href="#rfc.section.1">Introduction</a>
-</li>
-<li>2.   <a href="#rfc.section.2">What Are &#8220;End Users&#8221;?</a>
-</li>
-<li>3.   <a href="#rfc.section.3">Why The IETF Should Prioritise End Users</a>
-</li>
-<li>4.   <a href="#rfc.section.4">How The IETF Can Prioritise End Users</a>
-</li>
-<ul><li>4.1.   <a href="#rfc.section.4.1">Engaging the Internet Community</a>
-</li>
-<li>4.2.   <a href="#rfc.section.4.2">Creating User-Focused Systems</a>
-</li>
-<li>4.3.   <a href="#rfc.section.4.3">Designing for Positive User Outcomes</a>
-</li>
-<li>4.4.   <a href="#rfc.section.4.4">Identifying Negative End User Impact</a>
-</li>
-<li>4.5.   <a href="#rfc.section.4.5">Handling Conflicting End User Needs</a>
-</li>
-<li>4.6.   <a href="#rfc.section.4.6">Deprioritising Internal Needs</a>
-</li>
-</ul><li>5.   <a href="#rfc.section.5">IANA Considerations</a>
-</li>
-<li>6.   <a href="#rfc.section.6">Security Considerations</a>
-</li>
-<li>7.   <a href="#rfc.references">Informative References</a>
-</li>
-<li>Appendix A.   <a href="#rfc.appendix.A">Acknowledgements</a>
-</li>
-<li><a href="#rfc.authors">Author's Address</a>
-</li>
-
-
-  </ul>
-
-  <h1 id="rfc.section.1">
-<a href="#rfc.section.1">1.</a> <a href="#introduction" id="introduction">Introduction</a>
-</h1>
-<p id="rfc.section.1.p.1">Many who participate in the IETF are most comfortable making what we believe to be purely technical decisions; our process is defined to favor technical merit, through our well-known mantra of &#8220;rough consensus and running code.&#8221;</p>
-<p id="rfc.section.1.p.2">Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others. While we believe we are making only technical decisions, in reality, we are defining (in some degree) what is possible on the Internet itself.</p>
-<p id="rfc.section.1.p.3">This impact has become significant. As the Internet increasingly mediates essential functions in societies, it has unavoidably become profoundly political; it has helped people overthrow governments and revolutionize social orders, swing elections, control populations, collect data about individuals, and reveal secrets. It has created wealth for some individuals and companies while destroying others&#8217;.</p>
-<p id="rfc.section.1.p.4">All of this raises the question: Who do we go through the pain of gathering rough consensus and writing running code for?</p>
-<p id="rfc.section.1.p.5">After all, there are a variety of parties that standards can benefit, such as (but not limited to) end users, network operators, schools, equipment vendors, specification authors, specification implementers, content owners, governments, non-governmental organisations, social movements, employers, and parents.</p>
-<p id="rfc.section.1.p.6">Successful specifications will provide some benefit to all of the relevant parties because standards do not represent a zero-sum game. However, there are sometimes situations where there is a need to balance the benefits of a decision between two (or more) parties.</p>
-<p id="rfc.section.1.p.7">In these situations, when one of those parties is an &#8220;end user&#8221; of the Internet &#8211; for example, a person using a Web browser, mail client, or another agent that connects to the Internet &#8211; the Internet Architecture Board argues that the IETF should favor their interests over those of parties.</p>
-<p><a href="#who" class="xref">Section 2</a> explains what is meant by &#8220;end users&#8221;; <a href="#why" class="xref">Section 3</a> outlines why IETF work should prioritise them, and <a href="#how" class="xref">Section 4</a> describes how we can do that.</p>
-<h1 id="rfc.section.2">
-<a href="#rfc.section.2">2.</a> <a href="#who" id="who">What Are &#8220;End Users&#8221;?</a>
-</h1>
-<p id="rfc.section.2.p.1">In this document, &#8220;end users,&#8221; means non-technical users whose activities IETF standards are designed to support, sometimes indirectly. Thus, the end user of a protocol to manage routers is not a router administrator; it is the people using the network that the router operates within.</p>
-<p id="rfc.section.2.p.2">End users are not necessarily a homogenous group; they might have different views of how the Internet should work, and might occupy several roles, such as a seller, buyer, publisher, reader, service provider and consumer. An end user might be browsing the Web, monitoring remote equipment, playing a game, video conferencing with colleagues, sending messages to friends, or performing an operation in a remote surgery theatre. They might be &#8220;at the keyboard&#8221;, or represented by software indirectly (e.g., as a daemon).</p>
-<p id="rfc.section.2.p.3">Likewise, an individual end user might have many interests (e.g., privacy, security, flexibility, reachability) that are sometimes in tension.</p>
-<p id="rfc.section.2.p.4">A person whose interests we need to consider might not directly be using a specific system connected to the Internet. For example, if a child is using a browser, the interests of that child&#8217;s parents or guardians may be relevant. A person pictured in a photograph may have an interest in systems that process that photograph; a person entering a room with sensors that send data to the Internet has interests that may be involved in our deliberations about how those sensor readings are handled.</p>
-<p id="rfc.section.2.p.5">While such less-direct interactions between people and the Internet may be harder to evaluate, this document&#8217;s concept of end-user nonetheless includes such people.</p>
-<h1 id="rfc.section.3">
-<a href="#rfc.section.3">3.</a> <a href="#why" id="why">Why The IETF Should Prioritise End Users</a>
-</h1>
-<p id="rfc.section.3.p.1">Even before the IETF was established, the Internet technical community has focused on user needs since at least <a href="#RFC0001" class="xref">[RFC0001]</a>, which stated that &#8220;One of our goals must be to stimulate the immediate and easy use by a wide class of users.&#8221;</p>
-<p id="rfc.section.3.p.2">And, while we specialise in technical matters, the IETF is not neutral about the purpose of its work in developing the Internet; in &#8220;A Mission Statement for the IETF&#8221; <a href="#RFC3935" class="xref">[RFC3935]</a>, the definitions include:</p>
-<p></p>
-
-<ul class="empty"><li>The IETF community wants the Internet to succeed because we believe that the existence of the Internet, and its influence on economics, communication, and education, will help us to build a better human society.</li></ul>
-<p id="rfc.section.3.p.4">Later in Section 2.1, &#8220;The Scope of the Internet&#8221; it says:</p>
-<p></p>
-
-<ul class="empty"><li>The Internet isn&#8217;t value-neutral, and neither is the IETF. We want the Internet to be useful for communities that share our commitment to openness and fairness. We embrace technical concepts such as decentralized control, edge-user empowerment and sharing of resources, because those concepts resonate with the core values of the IETF community. These concepts have little to do with the technology that&#8217;s possible, and much to do with the technology that we choose to create.</li></ul>
-<p id="rfc.section.3.p.6">In other words, the IETF is concerned with developing and maintaining the Internet to promote the social good, and the society that the IETF is attempting to improve is composed of end users, along with groups of them forming businesses, governments, clubs, civil society organizations, and other institutions.</p>
-<p id="rfc.section.3.p.7">Merely advancing the measurable success of the Internet (e.g., deployment size, bandwidth, latency, number of users) is not an adequate goal; doing so ignores how technology is so often used as a lever to assert power over users, rather than empower them.</p>
-<p id="rfc.section.3.p.8">Beyond fulfilling the IETF&#8217;s mission, prioritising end users also helps to ensure the long-term health of the Internet and the IETF&#8217;s relevance to it. Perceptions of capture by vendors or other providers harm both; the IETF&#8217;s work will (deservedly) lose end users&#8217; trust if it prioritises (or is perceived to prioritise) others&#8217; interests over them.</p>
-<p id="rfc.section.3.p.9">Ultimately, the Internet will succeed or fail based upon the actions of its users, because they are the driving force behind its growth to date. Not prioritising them jeopardizes the network effect which the Internet relies upon to provide so much value.</p>
-<h1 id="rfc.section.4">
-<a href="#rfc.section.4">4.</a> <a href="#how" id="how">How The IETF Can Prioritise End Users</a>
-</h1>
-<p id="rfc.section.4.p.1">There are a few ways that the IAB believes the IETF community can prioritise end users, based upon our observations. By its nature, this is not a complete list.</p>
-<h1 id="rfc.section.4.1">
-<a href="#rfc.section.4.1">4.1.</a> <a href="#engaging-the-internet-community" id="engaging-the-internet-community">Engaging the Internet Community</a>
-</h1>
-<p id="rfc.section.4.1.p.1">The IETF community does not have any unique insight into what is &#8220;good for end users,&#8221; and it is not uncommon for us to be at a further disadvantage because of our close understanding of some &#8211; but not all &#8211; aspects of the Internet.</p>
-<p id="rfc.section.4.1.p.2">At the same time, we do have a culture of considerable deference to a broader &#8220;Internet community&#8221; in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have a positive impact upon them.</p>
-<p id="rfc.section.4.1.p.3">Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF&#8217;s work, but also a responsibility to consult with that greater Internet community. We should enter into a dialogue about not only the technical concerns that are well-represented in the IETF but also the political, social and economic concerns that it engenders, and that are better represented elsewhere.</p>
-<p id="rfc.section.4.1.p.4">The IETF community faces significant hurdles in doing so. Our work is specialised and often esoteric, and standard processes often occur on very long timescales. Affected parties are rarely technical experts, and their experience of the Internet is often based upon incomplete (and sometimes inaccurate) models. Often, even when we try to engage a broader audience, their participation is minimal &#8211; until a change affects someone in a way they don&#8217;t like. Surprising the Internet community is rarely a good outcome.</p>
-<p id="rfc.section.4.1.p.5">Government representatives sometimes participate in the IETF community. While this is welcome, it should not be taken as automatically representative of end users elsewhere, or even all end users in the relevant jurisdiction. Furthermore, what is desirable in one jurisdiction (or at least to its administrators) might be detrimental in others (see <a href="#conflict" class="xref">Section 4.5</a>).</p>
-<p id="rfc.section.4.1.p.6">While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often profound, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.</p>
-<p id="rfc.section.4.1.p.7">A promising approach to help fill these gaps is to identify and engage with specifically affected communities; for example, one or more industry associations, user groups, or a set of individuals, though we can&#8217;t of course formally ensure that they are appropriately representative.</p>
-<p id="rfc.section.4.1.p.8">In doing so, we should not require them to  &#8220;come to us&#8221;; unless a stakeholder community is already engaged in the IETF process effectively, the IETF community should explore how to meet with them on their terms &#8211; taking the initiative to contact them, explain our work, and solicit their feedback.</p>
-<p id="rfc.section.4.1.p.9">In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechanism to gather input within our community, they often do not have the visibility in other communities that is required to solicit input, much less effective participation.</p>
-<p id="rfc.section.4.1.p.10">Instead, an event like a workshop should be co-located &#8211; and ideally hosted or co-hosted &#8211; by a forum that&#8217;s familiar to that stakeholder community. We should also take the opportunity to raise the visibility of IETF work (or potential IETF work) in such fora through conference talks, panels, newsletter articles, etc.</p>
-<p id="rfc.section.4.1.p.11">When we engage with the Internet community, we should also clearly identify tailored feedback mechanisms (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.</p>
-<p id="rfc.section.4.1.p.12">Finally, we should remember that the RFC series are Requests For Comments; if there are serious implications of our work, we should document them and ask for feedback from the Internet Community.</p>
-<h1 id="rfc.section.4.2">
-<a href="#rfc.section.4.2">4.2.</a> <a href="#creating-user-focused-systems" id="creating-user-focused-systems">Creating User-Focused Systems</a>
-</h1>
-<p id="rfc.section.4.2.p.1">We should pay particular attention to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.</p>
-<p id="rfc.section.4.2.p.2">For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser &#8211; called the User Agent in <a href="#RFC7230" class="xref">[RFC7230]</a> and other specifications. Because there are multiple interoperable implementations, users can switch with relatively low costs, and as a result there is a natural tendency to more carefully consider the user&#8217;s needs as an agent. This leads to Web browsers&#8217; interests being better aligned with those of their users, creating an ecosystem that is more user-focused (even if there are serious challenges in it regarding the balance of power between implementations and the barrier to entry for new implementations).</p>
-<p id="rfc.section.4.2.p.3">In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role for representing the needs of the end user. Perhaps as a result of this, that ecosystem and its users face serious challenges.</p>
-<p id="rfc.section.4.2.p.4">We should also create explicit roles for users in our protocols where appropriate, and respect them.</p>
-<h1 id="rfc.section.4.3">
-<a href="#rfc.section.4.3">4.3.</a> <a href="#designing-for-positive-user-outcomes" id="designing-for-positive-user-outcomes">Designing for Positive User Outcomes</a>
-</h1>
-<p id="rfc.section.4.3.p.1">The Internet&#8217;s users are heterogeneous; they have different access characteristics (latency, available bandwidth, reliability), contexts (economic, social, and political), and different characteristics (languages spoken and read, cognitive and physical abilities).</p>
-<p id="rfc.section.4.3.p.2">The issues involved in serving them well are often not singular in nature; they often require multiple solutions. While the network effects of a single solution might be significant, this should not stop us from meeting user needs with multiple solutions if they are necessary.</p>
-<p id="rfc.section.4.3.p.3">However, this is not a reason to introduce alternative mechanisms that are harmful; see <a href="#conflict" class="xref">Section 4.5</a>.</p>
-<h1 id="rfc.section.4.4">
-<a href="#rfc.section.4.4">4.4.</a> <a href="#identifying-negative-end-user-impact" id="identifying-negative-end-user-impact">Identifying Negative End User Impact</a>
-</h1>
-<p id="rfc.section.4.4.p.1">At its best, our work will unambiguously promote the collective social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the &#8220;tussle&#8221; among stakeholders to produce a range of results (see <a href="#TUSSLE" class="xref">[TUSSLE]</a> for further discussion).</p>
-<p id="rfc.section.4.4.p.2">At the very least, however, we must examine our work for negative impact on end users, and take steps to mitigate it where encountered. In particular, when we&#8217;ve identified a conflict between the interests of end users and other stakeholders, we should err on the side of protecting end users.</p>
-<p id="rfc.section.4.4.p.3">Note that &#8220;negative impact on end users&#8221; is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss and come to consensus on. Merely asserting that something is harmful is not adequate. The converse is also true, though; it&#8217;s not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to our attention.</p>
-<p id="rfc.section.4.4.p.4">The IAB and IETF have already established a body of guidance for situations where this sort of conflict is common, including (but not limited to) <a href="#RFC7754" class="xref">[RFC7754]</a> on filtering, <a href="#RFC7258" class="xref">[RFC7258]</a> and <a href="#RFC7624" class="xref">[RFC7624]</a> on pervasive surveillance, <a href="#RFC7288" class="xref">[RFC7288]</a> on host firewalls, and <a href="#RFC6973" class="xref">[RFC6973]</a> regarding privacy considerations.</p>
-<p id="rfc.section.4.4.p.5">Much of that advice has focused on maintaining the end-to-end properties of a connection <a href="#RFC3724" class="xref">[RFC3724]</a>. This does not mean that our responsibility to users stops there; decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem on the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon &#8211; one that protocol design might have some influence upon.</p>
-<h1 id="rfc.section.4.5">
-<a href="#rfc.section.4.5">4.5.</a> <a href="#conflict" id="conflict">Handling Conflicting End User Needs</a>
-</h1>
-<p id="rfc.section.4.5.p.1">When the needs of different end users conflict (for example, two sets of end users both have reasonable desires) we again should try to minimise negative impact.</p>
-<p id="rfc.section.4.5.p.2">For example, when a decision improves the Internet for end users in one jurisdiction, but at the cost of potential harm to others elsewhere, that is not a good tradeoff. As such, we effectively design the Internet for the pessimal environment; if a user can be harmed, they probably will be, somewhere.</p>
-<p id="rfc.section.4.5.p.3">There may be cases where genuine technical need requires compromise. However, such tradeoffs are carefully examined and avoided when there are alternate means of achieving the desired goals. If they cannot be, these choices and reasoning ought to be thoroughly documented.</p>
-<h1 id="rfc.section.4.6">
-<a href="#rfc.section.4.6">4.6.</a> <a href="#deprioritising-internal-needs" id="deprioritising-internal-needs">Deprioritising Internal Needs</a>
-</h1>
-<p id="rfc.section.4.6.p.1">There are a number of needs that are very visible to us as specification authors, but should explicitly not be prioritised over the needs of end users.</p>
-<p id="rfc.section.4.6.p.2">These include: convenience for document editors, IETF process matters, and &#8220;architectural purity&#8221; for its own sake.</p>
-<h1 id="rfc.section.5">
-<a href="#rfc.section.5">5.</a> <a href="#iana-considerations" id="iana-considerations">IANA Considerations</a>
-</h1>
-<p id="rfc.section.5.p.1">This document does not require action by IANA.</p>
-<h1 id="rfc.section.6">
-<a href="#rfc.section.6">6.</a> <a href="#security-considerations" id="security-considerations">Security Considerations</a>
-</h1>
-<p id="rfc.section.6.p.1">This document does not have any direct security impact; however, failing to prioritise end users might well affect their security negatively in the long term.</p>
-<h1 id="rfc.references">
-<a href="#rfc.references">7.</a> Informative References</h1>
-<table><tbody>
-<tr>
-<td class="reference"><b id="RFC0001">[RFC0001]</b></td>
-<td class="top">
-<a>Crocker, S.</a>, "<a href="https://tools.ietf.org/html/rfc1">Host Software</a>", RFC 1, DOI 10.17487/RFC0001, April 1969.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC3724">[RFC3724]</b></td>
-<td class="top">
-<a>Kempf, J.</a>, <a>Austein, R.</a> and <a>IAB</a>, "<a href="https://tools.ietf.org/html/rfc3724">The Rise of the Middle and the Future of End-to-End: Reflections on the Evolution of the Internet Architecture</a>", RFC 3724, DOI 10.17487/RFC3724, March 2004.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC3935">[RFC3935]</b></td>
-<td class="top">
-<a>Alvestrand, H.</a>, "<a href="https://tools.ietf.org/html/rfc3935">A Mission Statement for the IETF</a>", BCP 95, RFC 3935, DOI 10.17487/RFC3935, October 2004.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC6973">[RFC6973]</b></td>
-<td class="top">
-<a>Cooper, A.</a>, <a>Tschofenig, H.</a>, <a>Aboba, B.</a>, <a>Peterson, J.</a>, <a>Morris, J.</a>, <a>Hansen, M.</a> and <a>R. Smith</a>, "<a href="https://tools.ietf.org/html/rfc6973">Privacy Considerations for Internet Protocols</a>", RFC 6973, DOI 10.17487/RFC6973, July 2013.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC7230">[RFC7230]</b></td>
-<td class="top">
-<a>Fielding, R.</a> and <a>J. Reschke</a>, "<a href="https://tools.ietf.org/html/rfc7230">Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing</a>", RFC 7230, DOI 10.17487/RFC7230, June 2014.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC7258">[RFC7258]</b></td>
-<td class="top">
-<a>Farrell, S.</a> and <a>H. Tschofenig</a>, "<a href="https://tools.ietf.org/html/rfc7258">Pervasive Monitoring Is an Attack</a>", BCP 188, RFC 7258, DOI 10.17487/RFC7258, May 2014.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC7288">[RFC7288]</b></td>
-<td class="top">
-<a>Thaler, D.</a>, "<a href="https://tools.ietf.org/html/rfc7288">Reflections on Host Firewalls</a>", RFC 7288, DOI 10.17487/RFC7288, June 2014.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC7624">[RFC7624]</b></td>
-<td class="top">
-<a>Barnes, R.</a>, <a>Schneier, B.</a>, <a>Jennings, C.</a>, <a>Hardie, T.</a>, <a>Trammell, B.</a>, <a>Huitema, C.</a> and <a>D. Borkmann</a>, "<a href="https://tools.ietf.org/html/rfc7624">Confidentiality in the Face of Pervasive Surveillance: A Threat Model and Problem Statement</a>", RFC 7624, DOI 10.17487/RFC7624, August 2015.</td>
-</tr>
-<tr>
-<td class="reference"><b id="RFC7754">[RFC7754]</b></td>
-<td class="top">
-<a>Barnes, R.</a>, <a>Cooper, A.</a>, <a>Kolkman, O.</a>, <a>Thaler, D.</a> and <a>E. Nordmark</a>, "<a href="https://tools.ietf.org/html/rfc7754">Technical Considerations for Internet Service Blocking and Filtering</a>", RFC 7754, DOI 10.17487/RFC7754, March 2016.</td>
-</tr>
-<tr>
-<td class="reference"><b id="TUSSLE">[TUSSLE]</b></td>
-<td class="top">
-<a title="MIT Lab for Computer Science">Clark, D.</a>, <a title="MIT Lab for Computer Science">Sollins, K.</a>, <a title="MIT Lab for Computer Science">Wroclawski, J.</a> and <a title="USC Information Sciences Institute">R. Braden</a>, "<a href="http://groups.csail.mit.edu/ana/Publications/PubPDFs/Tussle2002.pdf">Tussle in Cyberspace: Defining Tomorrow's Internet</a>", 2002.</td>
-</tr>
-</tbody></table>
-<h1 id="rfc.appendix.A">
-<a href="#rfc.appendix.A">Appendix A.</a> <a href="#acknowledgements" id="acknowledgements">Acknowledgements</a>
-</h1>
-<p id="rfc.section.A.p.1">This document was influenced by many discussions, both inside and outside of the IETF and IAB. In particular, Edward Snowden&#8217;s comments regarding the priority of end users at IETF 93 and the HTML5 Priority of Constituencies were both influential.</p>
-<p id="rfc.section.A.p.2">Many people gave feedback and input, including Harald Alvestrand, Mohamed Boucadair, Stephen Farrell, Joe Hildebrand, Lee Howard, Russ Housley, Niels ten Oever, Mando Rachovitsa, Martin Thomson, Brian Trammell, John Klensin, Eliot Lear, Ted Hardie, and Jari Arkko.</p>
-<h1 id="rfc.authors"><a href="#rfc.authors">Author's Address</a></h1>
-<div class="avoidbreak">
-  <address class="vcard">
-	<span class="vcardline">
-	  <span class="fn">Mark Nottingham</span> 
-	  <span class="n hidden">
-		<span class="family-name">Nottingham</span>
-	  </span>
-	</span>
-	<span class="org vcardline"></span>
-	<span class="adr">
-	  
-	  <span class="vcardline">
-		<span class="locality"></span> 
-		<span class="region"></span>
-		<span class="code"></span>
-	  </span>
-	  <span class="country-name vcardline"></span>
-	</span>
-	<span class="vcardline">EMail: <a href="mailto:mnot@mnot.net">mnot@mnot.net</a></span>
-
-<span class="vcardline">URI: <a href="https://www.mnot.net/">https://www.mnot.net/</a></span>
-
-  </address>
+<td class="center">The Internet is for End Users</td>
+<td class="right">January 2020</td>
+</tr></thead>
+<tfoot><tr>
+<td class="left">Nottingham</td>
+<td class="center">Expires 23 July 2020</td>
+<td class="right">[Page]</td>
+</tr></tfoot>
+</table>
+<div id="external-metadata" class="document-information"></div>
+<div id="internal-metadata" class="document-information">
+<dl id="identifiers">
+<dt class="label-workgroup">Workgroup:</dt>
+<dd class="workgroup">Internet Architecture Board (IAB)</dd>
+<dt class="label-internet-draft">Internet-Draft:</dt>
+<dd class="internet-draft">draft-iab-for-the-users-latest</dd>
+<dt class="label-published">Published:</dt>
+<dd class="published">
+<time datetime="2020-01-20" class="published">20 January 2020</time>
+    </dd>
+<dt class="label-intended-status">Intended Status:</dt>
+<dd class="intended-status">Informational</dd>
+<dt class="label-expires">Expires:</dt>
+<dd class="expires"><time datetime="2020-07-23">23 July 2020</time></dd>
+<dt class="label-authors">Author:</dt>
+<dd class="authors">
+<div class="author">
+      <div class="author-name">M. Nottingham</div>
 </div>
+</dd>
+</dl>
+</div>
+<h1 id="title">The Internet is for End Users</h1>
+<section id="section-abstract">
+      <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
+<p id="section-abstract-1">This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+</section>
+<section class="note" id="section-note.1">
+      <h2 id="name-note-to-readers">
+<a href="#name-note-to-readers" class="section-name selfRef">Note to Readers</a>
+      </h2>
+<p id="section-note.1-1">The issues list for this draft can be found at <a href="https://github.com/intarchboard/for-the-users/issues">https://github.com/intarchboard/for-the-users/issues</a>.<a href="#section-note.1-1" class="pilcrow">¶</a></p>
+<p id="section-note.1-2">The most recent (often, unpublished) draft is at <a href="https://intarchboard.github.io/for-the-users/">https://intarchboard.github.io/for-the-users/</a>.<a href="#section-note.1-2" class="pilcrow">¶</a></p>
+<p id="section-note.1-3">Recent changes are listed at <a href="https://github.com/intarchboard/for-the-users/commits/master">https://github.com/intarchboard/for-the-users/commits/master</a>.<a href="#section-note.1-3" class="pilcrow">¶</a></p>
+<p id="section-note.1-4">See also the draft's current status in the IETF datatracker, at
+<a href="https://datatracker.ietf.org/doc/draft-iab-for-the-users/">https://datatracker.ietf.org/doc/draft-iab-for-the-users/</a>.<a href="#section-note.1-4" class="pilcrow">¶</a></p>
+</section>
+<div id="status-of-memo">
+<section id="section-boilerplate.1">
+        <h2 id="name-status-of-this-memo">
+<a href="#name-status-of-this-memo" class="section-name selfRef">Status of This Memo</a>
+        </h2>
+<p id="section-boilerplate.1-1">
+        This Internet-Draft is submitted in full conformance with the
+        provisions of BCP 78 and BCP 79.<a href="#section-boilerplate.1-1" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.1-2">
+        Internet-Drafts are working documents of the Internet Engineering Task
+        Force (IETF). Note that other groups may also distribute working
+        documents as Internet-Drafts. The list of current Internet-Drafts is
+        at <span><a href="https://datatracker.ietf.org/drafts/current/">https://datatracker.ietf.org/drafts/current/</a></span>.<a href="#section-boilerplate.1-2" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.1-3">
+        Internet-Drafts are draft documents valid for a maximum of six months
+        and may be updated, replaced, or obsoleted by other documents at any
+        time. It is inappropriate to use Internet-Drafts as reference
+        material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.1-4">
+        This Internet-Draft will expire on 23 July 2020.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="copyright">
+<section id="section-boilerplate.2">
+        <h2 id="name-copyright-notice">
+<a href="#name-copyright-notice" class="section-name selfRef">Copyright Notice</a>
+        </h2>
+<p id="section-boilerplate.2-1">
+            Copyright (c) 2020 IETF Trust and the persons identified as the
+            document authors. All rights reserved.<a href="#section-boilerplate.2-1" class="pilcrow">¶</a></p>
+<p id="section-boilerplate.2-2">
+            This document is subject to BCP 78 and the IETF Trust's Legal
+            Provisions Relating to IETF Documents
+            (https://trustee.ietf.org/license-info) in effect on the date of
+            publication of this document. Please review these documents
+            carefully, as they describe your rights and restrictions with
+            respect to this document.<a href="#section-boilerplate.2-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="toc">
+<section id="section-boilerplate.3">
+        <a href="#" onclick="scroll(0,0)" class="toplink">▲</a><h2 id="name-table-of-contents">
+<a href="#name-table-of-contents" class="section-name selfRef">Table of Contents</a>
+        </h2>
+<nav class="toc"><ul class="toc ulEmpty">
+<li class="toc ulEmpty" id="section-boilerplate.3-1.1">
+            <p id="section-boilerplate.3-1.1.1"><a href="#section-1" class="xref">1</a>.  <a href="#name-introduction" class="xref">Introduction</a><a href="#section-boilerplate.3-1.1.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.2">
+            <p id="section-boilerplate.3-1.2.1"><a href="#section-2" class="xref">2</a>.  <a href="#name-what-are-end-users" class="xref">What Are "End Users"?</a><a href="#section-boilerplate.3-1.2.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.3">
+            <p id="section-boilerplate.3-1.3.1"><a href="#section-3" class="xref">3</a>.  <a href="#name-why-the-ietf-should-priorit" class="xref">Why The IETF Should Prioritise End Users</a><a href="#section-boilerplate.3-1.3.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.4">
+            <p id="section-boilerplate.3-1.4.1"><a href="#section-4" class="xref">4</a>.  <a href="#name-how-the-ietf-can-prioritise" class="xref">How The IETF Can Prioritise End Users</a><a href="#section-boilerplate.3-1.4.1" class="pilcrow">¶</a></p>
+<ul class="toc ulEmpty">
+<li class="toc ulEmpty" id="section-boilerplate.3-1.4.2.1">
+                <p id="section-boilerplate.3-1.4.2.1.1"><a href="#section-4.1" class="xref">4.1</a>.  <a href="#name-engaging-the-internet-commu" class="xref">Engaging the Internet Community</a><a href="#section-boilerplate.3-1.4.2.1.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="toc ulEmpty" id="section-boilerplate.3-1.4.2.2">
+                <p id="section-boilerplate.3-1.4.2.2.1"><a href="#section-4.2" class="xref">4.2</a>.  <a href="#name-creating-user-focused-syste" class="xref">Creating User-Focused Systems</a><a href="#section-boilerplate.3-1.4.2.2.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="toc ulEmpty" id="section-boilerplate.3-1.4.2.3">
+                <p id="section-boilerplate.3-1.4.2.3.1"><a href="#section-4.3" class="xref">4.3</a>.  <a href="#name-designing-for-positive-user" class="xref">Designing for Positive User Outcomes</a><a href="#section-boilerplate.3-1.4.2.3.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="toc ulEmpty" id="section-boilerplate.3-1.4.2.4">
+                <p id="section-boilerplate.3-1.4.2.4.1"><a href="#section-4.4" class="xref">4.4</a>.  <a href="#name-identifying-negative-end-us" class="xref">Identifying Negative End User Impact</a><a href="#section-boilerplate.3-1.4.2.4.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="toc ulEmpty" id="section-boilerplate.3-1.4.2.5">
+                <p id="section-boilerplate.3-1.4.2.5.1"><a href="#section-4.5" class="xref">4.5</a>.  <a href="#name-handling-conflicting-end-us" class="xref">Handling Conflicting End User Needs</a><a href="#section-boilerplate.3-1.4.2.5.1" class="pilcrow">¶</a></p>
+</li>
+              <li class="toc ulEmpty" id="section-boilerplate.3-1.4.2.6">
+                <p id="section-boilerplate.3-1.4.2.6.1"><a href="#section-4.6" class="xref">4.6</a>.  <a href="#name-deprioritising-internal-nee" class="xref">Deprioritising Internal Needs</a><a href="#section-boilerplate.3-1.4.2.6.1" class="pilcrow">¶</a></p>
+</li>
+            </ul>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.5">
+            <p id="section-boilerplate.3-1.5.1"><a href="#section-5" class="xref">5</a>.  <a href="#name-iana-considerations" class="xref">IANA Considerations</a><a href="#section-boilerplate.3-1.5.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.6">
+            <p id="section-boilerplate.3-1.6.1"><a href="#section-6" class="xref">6</a>.  <a href="#name-security-considerations" class="xref">Security Considerations</a><a href="#section-boilerplate.3-1.6.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.7">
+            <p id="section-boilerplate.3-1.7.1"><a href="#section-7" class="xref">7</a>.  <a href="#name-informative-references" class="xref">Informative References</a><a href="#section-boilerplate.3-1.7.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.8">
+            <p id="section-boilerplate.3-1.8.1"><a href="#section-appendix.a" class="xref">Appendix A</a>.  <a href="#name-acknowledgements" class="xref">Acknowledgements</a><a href="#section-boilerplate.3-1.8.1" class="pilcrow">¶</a></p>
+</li>
+          <li class="toc ulEmpty" id="section-boilerplate.3-1.9">
+            <p id="section-boilerplate.3-1.9.1"><a href="#section-appendix.b" class="xref"></a><a href="#name-authors-address" class="xref">Author's Address</a><a href="#section-boilerplate.3-1.9.1" class="pilcrow">¶</a></p>
+</li>
+        </ul>
+</nav>
+</section>
+</div>
+<div id="introduction">
+<section id="section-1">
+      <h2 id="name-introduction">
+<a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
+      </h2>
+<p id="section-1-1">Many who participate in the IETF are most comfortable making what we believe to be purely technical decisions; our process is defined to favor technical merit, through our well-known mantra of "rough consensus and running code."<a href="#section-1-1" class="pilcrow">¶</a></p>
+<p id="section-1-2">Nevertheless, the running code that results from our process (when things work well) inevitably has an impact beyond technical considerations, because the underlying decisions afford some uses while discouraging others. While we believe we are making only technical decisions, in reality, we are defining (in some degree) what is possible on the Internet itself.<a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-3">This impact has become significant. As the Internet increasingly mediates essential functions in societies, it has unavoidably become profoundly political; it has helped people overthrow governments and revolutionize social orders, swing elections, control populations, collect data about individuals, and reveal secrets. It has created wealth for some individuals and companies while destroying others'.<a href="#section-1-3" class="pilcrow">¶</a></p>
+<p id="section-1-4">All of this raises the question: Who do we go through the pain of gathering rough consensus and writing running code for?<a href="#section-1-4" class="pilcrow">¶</a></p>
+<p id="section-1-5">After all, there are a variety of parties that standards can benefit, such as (but not limited to) end users, network operators, schools, equipment vendors, specification authors, specification implementers, content owners, governments, non-governmental organisations, social movements, employers, and parents.<a href="#section-1-5" class="pilcrow">¶</a></p>
+<p id="section-1-6">Successful specifications will provide some benefit to all of the relevant parties because standards do not represent a zero-sum game. However, there are sometimes situations where there is a need to balance the benefits of a decision between two (or more) parties.<a href="#section-1-6" class="pilcrow">¶</a></p>
+<p id="section-1-7">In these situations, when one of those parties is an "end user" of the Internet - for example, a person using a Web browser, mail client, or another agent that connects to the Internet - the Internet Architecture Board argues that the IETF should favor their interests over those of parties.<a href="#section-1-7" class="pilcrow">¶</a></p>
+<p id="section-1-8"><a href="#who" class="xref">Section 2</a> explains what is meant by "end users"; <a href="#why" class="xref">Section 3</a> outlines why IETF work should prioritise them, and <a href="#how" class="xref">Section 4</a> describes how we can do that.<a href="#section-1-8" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="who">
+<section id="section-2">
+      <h2 id="name-what-are-end-users">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-what-are-end-users" class="section-name selfRef">What Are "End Users"?</a>
+      </h2>
+<p id="section-2-1">In this document, "end users," means non-technical users whose activities IETF standards are designed to support, sometimes indirectly. Thus, the end user of a protocol to manage routers is not a router administrator; it is the people using the network that the router operates within.<a href="#section-2-1" class="pilcrow">¶</a></p>
+<p id="section-2-2">End users are not necessarily a homogenous group; they might have different views of how the Internet should work, and might occupy several roles, such as a seller, buyer, publisher, reader, service provider and consumer. An end user might be browsing the Web, monitoring remote equipment, playing a game, video conferencing with colleagues, sending messages to friends, or performing an operation in a remote surgery theatre. They might be "at the keyboard", or represented by software indirectly (e.g., as a daemon).<a href="#section-2-2" class="pilcrow">¶</a></p>
+<p id="section-2-3">Likewise, an individual end user might have many interests (e.g., privacy, security, flexibility, reachability) that are sometimes in tension.<a href="#section-2-3" class="pilcrow">¶</a></p>
+<p id="section-2-4">A person whose interests we need to consider might not directly be using a specific system connected to the Internet. For example, if a child is using a browser, the interests of that child's parents or guardians may be relevant. A person pictured in a photograph may have an interest in systems that process that photograph; a person entering a room with sensors that send data to the Internet has interests that may be involved in our deliberations about how those sensor readings are handled.<a href="#section-2-4" class="pilcrow">¶</a></p>
+<p id="section-2-5">While such less-direct interactions between people and the Internet may be harder to evaluate, this document's concept of end-user nonetheless includes such people.<a href="#section-2-5" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="why">
+<section id="section-3">
+      <h2 id="name-why-the-ietf-should-priorit">
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-why-the-ietf-should-priorit" class="section-name selfRef">Why The IETF Should Prioritise End Users</a>
+      </h2>
+<p id="section-3-1">Even before the IETF was established, the Internet technical community has focused on user needs since at least <span>[<a href="#RFC0001" class="xref">RFC0001</a>]</span>, which stated that "One of our goals must be to stimulate the immediate and easy use by a wide class of users."<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">And, while we specialise in technical matters, the IETF is not neutral about the purpose of its work in developing the Internet; in "A Mission Statement for the IETF" <span>[<a href="#RFC3935" class="xref">RFC3935</a>]</span>, the definitions include:<a href="#section-3-2" class="pilcrow">¶</a></p>
+<ul class="ulEmpty">
+<li class="ulEmpty" id="section-3-3.1">The IETF community wants the Internet to succeed because we believe that the existence of the Internet, and its influence on economics, communication, and education, will help us to build a better human society.<a href="#section-3-3.1" class="pilcrow">¶</a>
+</li>
+      </ul>
+<p id="section-3-4">Later in Section 2.1, "The Scope of the Internet" it says:<a href="#section-3-4" class="pilcrow">¶</a></p>
+<ul class="ulEmpty">
+<li class="ulEmpty" id="section-3-5.1">The Internet isn't value-neutral, and neither is the IETF. We want the Internet to be useful for communities that share our commitment to openness and fairness. We embrace technical concepts such as decentralized control, edge-user empowerment and sharing of resources, because those concepts resonate with the core values of the IETF community. These concepts have little to do with the technology that's possible, and much to do with the technology that we choose to create.<a href="#section-3-5.1" class="pilcrow">¶</a>
+</li>
+      </ul>
+<p id="section-3-6">In other words, the IETF is concerned with developing and maintaining the Internet to promote the social good, and the society that the IETF is attempting to improve is composed of end users, along with groups of them forming businesses, governments, clubs, civil society organizations, and other institutions.<a href="#section-3-6" class="pilcrow">¶</a></p>
+<p id="section-3-7">Merely advancing the measurable success of the Internet (e.g., deployment size, bandwidth, latency, number of users) is not an adequate goal; doing so ignores how technology is so often used as a lever to assert power over users, rather than empower them.<a href="#section-3-7" class="pilcrow">¶</a></p>
+<p id="section-3-8">Beyond fulfilling the IETF's mission, prioritising end users also helps to ensure the long-term health of the Internet and the IETF's relevance to it. Perceptions of capture by vendors or other providers harm both; the IETF's work will (deservedly) lose end users' trust if it prioritises (or is perceived to prioritise) others' interests over them.<a href="#section-3-8" class="pilcrow">¶</a></p>
+<p id="section-3-9">Ultimately, the Internet will succeed or fail based upon the actions of its users, because they are the driving force behind its growth to date. Not prioritising them jeopardizes the network effect which the Internet relies upon to provide so much value.<a href="#section-3-9" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="how">
+<section id="section-4">
+      <h2 id="name-how-the-ietf-can-prioritise">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-how-the-ietf-can-prioritise" class="section-name selfRef">How The IETF Can Prioritise End Users</a>
+      </h2>
+<p id="section-4-1">There are a few ways that the IAB believes the IETF community can prioritise end users, based upon our observations. By its nature, this is not a complete list.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<div id="engaging-the-internet-community">
+<section id="section-4.1">
+        <h3 id="name-engaging-the-internet-commu">
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-engaging-the-internet-commu" class="section-name selfRef">Engaging the Internet Community</a>
+        </h3>
+<p id="section-4.1-1">The IETF community does not have any unique insight into what is "good for end users," and it is not uncommon for us to be at a further disadvantage because of our close understanding of some - but not all - aspects of the Internet.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<p id="section-4.1-2">At the same time, we do have a culture of considerable deference to a broader "Internet community" in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have a positive impact upon them.<a href="#section-4.1-2" class="pilcrow">¶</a></p>
+<p id="section-4.1-3">Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community. We should enter into a dialogue about not only the technical concerns that are well-represented in the IETF but also the political, social and economic concerns that it engenders, and that are better represented elsewhere.<a href="#section-4.1-3" class="pilcrow">¶</a></p>
+<p id="section-4.1-4">The IETF community faces significant hurdles in doing so. Our work is specialised and often esoteric, and standard processes often occur on very long timescales. Affected parties are rarely technical experts, and their experience of the Internet is often based upon incomplete (and sometimes inaccurate) models. Often, even when we try to engage a broader audience, their participation is minimal - until a change affects someone in a way they don't like. Surprising the Internet community is rarely a good outcome.<a href="#section-4.1-4" class="pilcrow">¶</a></p>
+<p id="section-4.1-5">Government representatives sometimes participate in the IETF community. While this is welcome, it should not be taken as automatically representative of end users elsewhere, or even all end users in the relevant jurisdiction. Furthermore, what is desirable in one jurisdiction (or at least to its administrators) might be detrimental in others (see <a href="#conflict" class="xref">Section 4.5</a>).<a href="#section-4.1-5" class="pilcrow">¶</a></p>
+<p id="section-4.1-6">While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often profound, and they are in many ways the most representative advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.<a href="#section-4.1-6" class="pilcrow">¶</a></p>
+<p id="section-4.1-7">A promising approach to help fill these gaps is to identify and engage with specifically affected communities; for example, one or more industry associations, user groups, or a set of individuals, though we can't of course formally ensure that they are appropriately representative.<a href="#section-4.1-7" class="pilcrow">¶</a></p>
+<p id="section-4.1-8">In doing so, we should not require them to  "come to us"; unless a stakeholder community is already engaged in the IETF process effectively, the IETF community should explore how to meet with them on their terms - taking the initiative to contact them, explain our work, and solicit their feedback.<a href="#section-4.1-8" class="pilcrow">¶</a></p>
+<p id="section-4.1-9">In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechanism to gather input within our community, they often do not have the visibility in other communities that is required to solicit input, much less effective participation.<a href="#section-4.1-9" class="pilcrow">¶</a></p>
+<p id="section-4.1-10">Instead, an event like a workshop should be co-located - and ideally hosted or co-hosted - by a forum that's familiar to that stakeholder community. We should also take the opportunity to raise the visibility of IETF work (or potential IETF work) in such fora through conference talks, panels, newsletter articles, etc.<a href="#section-4.1-10" class="pilcrow">¶</a></p>
+<p id="section-4.1-11">When we engage with the Internet community, we should also clearly identify tailored feedback mechanisms (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.<a href="#section-4.1-11" class="pilcrow">¶</a></p>
+<p id="section-4.1-12">Finally, we should remember that the RFC series are Requests For Comments; if there are serious implications of our work, we should document them and ask for feedback from the Internet Community.<a href="#section-4.1-12" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="creating-user-focused-systems">
+<section id="section-4.2">
+        <h3 id="name-creating-user-focused-syste">
+<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-creating-user-focused-syste" class="section-name selfRef">Creating User-Focused Systems</a>
+        </h3>
+<p id="section-4.2-1">We should pay particular attention to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
+<p id="section-4.2-2">For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser - called the User Agent in <span>[<a href="#RFC7230" class="xref">RFC7230</a>]</span> and other specifications. Because there are multiple interoperable implementations, users can switch with relatively low costs, and as a result there is a natural tendency to more carefully consider the user's needs as an agent. This leads to Web browsers' interests being better aligned with those of their users, creating an ecosystem that is more user-focused (even if there are serious challenges in it regarding the balance of power between implementations and the barrier to entry for new implementations).<a href="#section-4.2-2" class="pilcrow">¶</a></p>
+<p id="section-4.2-3">In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role for representing the needs of the end user. Perhaps as a result of this, that ecosystem and its users face serious challenges.<a href="#section-4.2-3" class="pilcrow">¶</a></p>
+<p id="section-4.2-4">We should also create explicit roles for users in our protocols where appropriate, and respect them.<a href="#section-4.2-4" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="designing-for-positive-user-outcomes">
+<section id="section-4.3">
+        <h3 id="name-designing-for-positive-user">
+<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-designing-for-positive-user" class="section-name selfRef">Designing for Positive User Outcomes</a>
+        </h3>
+<p id="section-4.3-1">The Internet's users are heterogeneous; they have different access characteristics (latency, available bandwidth, reliability), contexts (economic, social, and political), and different characteristics (languages spoken and read, cognitive and physical abilities).<a href="#section-4.3-1" class="pilcrow">¶</a></p>
+<p id="section-4.3-2">The issues involved in serving them well are often not singular in nature; they often require multiple solutions. While the network effects of a single solution might be significant, this should not stop us from meeting user needs with multiple solutions if they are necessary.<a href="#section-4.3-2" class="pilcrow">¶</a></p>
+<p id="section-4.3-3">However, this is not a reason to introduce alternative mechanisms that are harmful; see <a href="#conflict" class="xref">Section 4.5</a>.<a href="#section-4.3-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="identifying-negative-end-user-impact">
+<section id="section-4.4">
+        <h3 id="name-identifying-negative-end-us">
+<a href="#section-4.4" class="section-number selfRef">4.4. </a><a href="#name-identifying-negative-end-us" class="section-name selfRef">Identifying Negative End User Impact</a>
+        </h3>
+<p id="section-4.4-1">At its best, our work will unambiguously promote the collective social good. In some cases, we will consciously decide to be neutral and open-ended, allowing the "tussle" among stakeholders to produce a range of results (see <span>[<a href="#TUSSLE" class="xref">TUSSLE</a>]</span> for further discussion).<a href="#section-4.4-1" class="pilcrow">¶</a></p>
+<p id="section-4.4-2">At the very least, however, we must examine our work for negative impact on end users, and take steps to mitigate it where encountered. In particular, when we've identified a conflict between the interests of end users and other stakeholders, we should err on the side of protecting end users.<a href="#section-4.4-2" class="pilcrow">¶</a></p>
+<p id="section-4.4-3">Note that "negative impact on end users" is not defined in this document; that is something that the relevant body (e.g., Working Group) needs to discuss and come to consensus on. Merely asserting that something is harmful is not adequate. The converse is also true, though; it's not permissible to avoid identifying harms, nor is it acceptable to ignore them when brought to our attention.<a href="#section-4.4-3" class="pilcrow">¶</a></p>
+<p id="section-4.4-4">The IAB and IETF have already established a body of guidance for situations where this sort of conflict is common, including (but not limited to) <span>[<a href="#RFC7754" class="xref">RFC7754</a>]</span> on filtering, <span>[<a href="#RFC7258" class="xref">RFC7258</a>]</span> and <span>[<a href="#RFC7624" class="xref">RFC7624</a>]</span> on pervasive surveillance, <span>[<a href="#RFC7288" class="xref">RFC7288</a>]</span> on host firewalls, and <span>[<a href="#RFC6973" class="xref">RFC6973</a>]</span> regarding privacy considerations.<a href="#section-4.4-4" class="pilcrow">¶</a></p>
+<p id="section-4.4-5">Much of that advice has focused on maintaining the end-to-end properties of a connection <span>[<a href="#RFC3724" class="xref">RFC3724</a>]</span>. This does not mean that our responsibility to users stops there; decisions might affect users in other ways. For example, data collection by various applications even inside otherwise secure connections is a major problem on the Internet today. Also, inappropriate concentration of power on the Internet has become a concerning phenomenon - one that protocol design might have some influence upon.<a href="#section-4.4-5" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="conflict">
+<section id="section-4.5">
+        <h3 id="name-handling-conflicting-end-us">
+<a href="#section-4.5" class="section-number selfRef">4.5. </a><a href="#name-handling-conflicting-end-us" class="section-name selfRef">Handling Conflicting End User Needs</a>
+        </h3>
+<p id="section-4.5-1">When the needs of different end users conflict (for example, two sets of end users both have reasonable desires) we again should try to minimise negative impact.<a href="#section-4.5-1" class="pilcrow">¶</a></p>
+<p id="section-4.5-2">For example, when a decision improves the Internet for end users in one jurisdiction, but at the cost of potential harm to others elsewhere, that is not a good tradeoff. As such, we effectively design the Internet for the pessimal environment; if a user can be harmed, they probably will be, somewhere.<a href="#section-4.5-2" class="pilcrow">¶</a></p>
+<p id="section-4.5-3">There may be cases where genuine technical need requires compromise. However, such tradeoffs are carefully examined and avoided when there are alternate means of achieving the desired goals. If they cannot be, these choices and reasoning ought to be thoroughly documented.<a href="#section-4.5-3" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="deprioritising-internal-needs">
+<section id="section-4.6">
+        <h3 id="name-deprioritising-internal-nee">
+<a href="#section-4.6" class="section-number selfRef">4.6. </a><a href="#name-deprioritising-internal-nee" class="section-name selfRef">Deprioritising Internal Needs</a>
+        </h3>
+<p id="section-4.6-1">There are a number of needs that are very visible to us as specification authors, but should explicitly not be prioritised over the needs of end users.<a href="#section-4.6-1" class="pilcrow">¶</a></p>
+<p id="section-4.6-2">These include: convenience for document editors, IETF process matters, and "architectural purity" for its own sake.<a href="#section-4.6-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="iana-considerations">
+<section id="section-5">
+      <h2 id="name-iana-considerations">
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+      </h2>
+<p id="section-5-1">This document does not require action by IANA.<a href="#section-5-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="security-considerations">
+<section id="section-6">
+      <h2 id="name-security-considerations">
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+      </h2>
+<p id="section-6-1">This document does not have any direct security impact; however, failing to prioritise end users might well affect their security negatively in the long term.<a href="#section-6-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<section id="section-7">
+      <h2 id="name-informative-references">
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+      </h2>
+<dl class="references">
+<dt id="RFC0001">[RFC0001]</dt>
+      <dd>
+<span class="refAuthor">Crocker, S.</span>, <span class="refTitle">"Host Software"</span>, <span class="seriesInfo">RFC 1</span>, <span class="seriesInfo">DOI 10.17487/RFC0001</span>, <time datetime="1969-04">April 1969</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc1">https://www.rfc-editor.org/info/rfc1</a>&gt;</span>. </dd>
+<dt id="RFC3724">[RFC3724]</dt>
+      <dd>
+<span class="refAuthor">Kempf, J., Ed.</span><span class="refAuthor">, Austein, R., Ed.</span><span class="refAuthor">, and IAB</span>, <span class="refTitle">"The Rise of the Middle and the Future of End-to-End: Reflections on the Evolution of the Internet Architecture"</span>, <span class="seriesInfo">RFC 3724</span>, <span class="seriesInfo">DOI 10.17487/RFC3724</span>, <time datetime="2004-03">March 2004</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc3724">https://www.rfc-editor.org/info/rfc3724</a>&gt;</span>. </dd>
+<dt id="RFC3935">[RFC3935]</dt>
+      <dd>
+<span class="refAuthor">Alvestrand, H.</span>, <span class="refTitle">"A Mission Statement for the IETF"</span>, <span class="seriesInfo">BCP 95</span>, <span class="seriesInfo">RFC 3935</span>, <span class="seriesInfo">DOI 10.17487/RFC3935</span>, <time datetime="2004-10">October 2004</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc3935">https://www.rfc-editor.org/info/rfc3935</a>&gt;</span>. </dd>
+<dt id="RFC6973">[RFC6973]</dt>
+      <dd>
+<span class="refAuthor">Cooper, A.</span><span class="refAuthor">, Tschofenig, H.</span><span class="refAuthor">, Aboba, B.</span><span class="refAuthor">, Peterson, J.</span><span class="refAuthor">, Morris, J.</span><span class="refAuthor">, Hansen, M.</span><span class="refAuthor">, and R. Smith</span>, <span class="refTitle">"Privacy Considerations for Internet Protocols"</span>, <span class="seriesInfo">RFC 6973</span>, <span class="seriesInfo">DOI 10.17487/RFC6973</span>, <time datetime="2013-07">July 2013</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc6973">https://www.rfc-editor.org/info/rfc6973</a>&gt;</span>. </dd>
+<dt id="RFC7230">[RFC7230]</dt>
+      <dd>
+<span class="refAuthor">Fielding, R., Ed.</span><span class="refAuthor"> and J. Reschke, Ed.</span>, <span class="refTitle">"Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing"</span>, <span class="seriesInfo">RFC 7230</span>, <span class="seriesInfo">DOI 10.17487/RFC7230</span>, <time datetime="2014-06">June 2014</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7230">https://www.rfc-editor.org/info/rfc7230</a>&gt;</span>. </dd>
+<dt id="RFC7258">[RFC7258]</dt>
+      <dd>
+<span class="refAuthor">Farrell, S.</span><span class="refAuthor"> and H. Tschofenig</span>, <span class="refTitle">"Pervasive Monitoring Is an Attack"</span>, <span class="seriesInfo">BCP 188</span>, <span class="seriesInfo">RFC 7258</span>, <span class="seriesInfo">DOI 10.17487/RFC7258</span>, <time datetime="2014-05">May 2014</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7258">https://www.rfc-editor.org/info/rfc7258</a>&gt;</span>. </dd>
+<dt id="RFC7288">[RFC7288]</dt>
+      <dd>
+<span class="refAuthor">Thaler, D.</span>, <span class="refTitle">"Reflections on Host Firewalls"</span>, <span class="seriesInfo">RFC 7288</span>, <span class="seriesInfo">DOI 10.17487/RFC7288</span>, <time datetime="2014-06">June 2014</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7288">https://www.rfc-editor.org/info/rfc7288</a>&gt;</span>. </dd>
+<dt id="RFC7624">[RFC7624]</dt>
+      <dd>
+<span class="refAuthor">Barnes, R.</span><span class="refAuthor">, Schneier, B.</span><span class="refAuthor">, Jennings, C.</span><span class="refAuthor">, Hardie, T.</span><span class="refAuthor">, Trammell, B.</span><span class="refAuthor">, Huitema, C.</span><span class="refAuthor">, and D. Borkmann</span>, <span class="refTitle">"Confidentiality in the Face of Pervasive Surveillance: A Threat Model and Problem Statement"</span>, <span class="seriesInfo">RFC 7624</span>, <span class="seriesInfo">DOI 10.17487/RFC7624</span>, <time datetime="2015-08">August 2015</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7624">https://www.rfc-editor.org/info/rfc7624</a>&gt;</span>. </dd>
+<dt id="RFC7754">[RFC7754]</dt>
+      <dd>
+<span class="refAuthor">Barnes, R.</span><span class="refAuthor">, Cooper, A.</span><span class="refAuthor">, Kolkman, O.</span><span class="refAuthor">, Thaler, D.</span><span class="refAuthor">, and E. Nordmark</span>, <span class="refTitle">"Technical Considerations for Internet Service Blocking and Filtering"</span>, <span class="seriesInfo">RFC 7754</span>, <span class="seriesInfo">DOI 10.17487/RFC7754</span>, <time datetime="2016-03">March 2016</time>, <span>&lt;<a href="https://www.rfc-editor.org/info/rfc7754">https://www.rfc-editor.org/info/rfc7754</a>&gt;</span>. </dd>
+<dt id="TUSSLE">[TUSSLE]</dt>
+    <dd>
+<span class="refAuthor">Clark, D.</span><span class="refAuthor">, Sollins, K.</span><span class="refAuthor">, Wroclawski, J.</span><span class="refAuthor">, and R. Braden</span>, <span class="refTitle">"Tussle in Cyberspace: Defining Tomorrow's Internet"</span>, <time datetime="2002">2002</time>, <span>&lt;<a href="http://groups.csail.mit.edu/ana/Publications/PubPDFs/Tussle2002.pdf">http://groups.csail.mit.edu/ana/Publications/PubPDFs/Tussle2002.pdf</a>&gt;</span>. </dd>
+</dl>
+</section>
+<div id="acknowledgements">
+<section id="section-appendix.a">
+      <h2 id="name-acknowledgements">
+<a href="#section-appendix.a" class="section-number selfRef">Appendix A. </a><a href="#name-acknowledgements" class="section-name selfRef">Acknowledgements</a>
+      </h2>
+<p id="section-appendix.a-1">This document was influenced by many discussions, both inside and outside of the IETF and IAB. In particular, Edward Snowden's comments regarding the priority of end users at IETF 93 and the HTML5 Priority of Constituencies were both influential.<a href="#section-appendix.a-1" class="pilcrow">¶</a></p>
+<p id="section-appendix.a-2">Many people gave feedback and input, including Harald Alvestrand, Mohamed Boucadair, Stephen Farrell, Joe Hildebrand, Lee Howard, Russ Housley, Niels ten Oever, Mando Rachovitsa, Martin Thomson, Brian Trammell, John Klensin, Eliot Lear, Ted Hardie, and Jari Arkko.<a href="#section-appendix.a-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="authors-addresses">
+<section id="section-appendix.b">
+      <h2 id="name-authors-address">
+<a href="#name-authors-address" class="section-name selfRef">Author's Address</a>
+      </h2>
+<address class="vcard">
+        <div dir="auto" class="left"><span class="fn nameRole">Mark Nottingham</span></div>
+<div class="email">
+<span>Email:</span>
+<a href="mailto:mnot@mnot.net" class="email">mnot@mnot.net</a>
+</div>
+<div class="url">
+<span>URI:</span>
+<a href="https://www.mnot.net/" class="url">https://www.mnot.net/</a>
+</div>
+</address>
+</section>
+</div>
+<script>var toc = document.getElementById("toc");
+var tocToggle = toc.querySelector("h2");
+var tocNav = toc.querySelector("nav");
 
+// mobile menu toggle
+tocToggle.onclick = function(event) {
+    if (window.innerWidth < 1024) {
+ var tocNavDisplay = tocNav.currentStyle ? tocNav.currentStyle.display : getComputedStyle(tocNav, null).display;
+ if (tocNavDisplay == "none") {
+     tocNav.style.display = "block";
+ } else {
+     tocNav.style.display = "none";
+ }
+    }
+}
+
+// toc anchor scroll to anchor
+tocNav.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (event.target.nodeName == 'A') {
+ if (window.innerWidth < 1024) {
+     tocNav.style.display = "none";
+ }
+ var href = event.target.getAttribute("href");
+ var anchorId = href.substr(1);
+ var anchor =  document.getElementById(anchorId);
+ anchor.scrollIntoView(true);
+ window.history.pushState("","",href);
+    }
+});
+
+// switch toc mode when window resized
+window.onresize = function () {
+    if (window.innerWidth < 1024) {
+ tocNav.style.display = "none";
+    } else {
+ tocNav.style.display = "block";
+    }
+}
+</script>
 </body>
 </html>
-
