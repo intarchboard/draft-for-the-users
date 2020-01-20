@@ -155,7 +155,7 @@ Finally, we should remember that the RFC series are Requests For Comments; if th
 
 We should pay particular attention to the kinds of architectures we create, and whether they encourage or discourage an Internet that works for end users.
 
-For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser -- called the User Agent in {{?RFC7230}} and other specifications. Because there is more than one implementation of the standards that specify a Web browser, there is a natural competition between them to do carefully consider the user's needs as an agent. As a result, Web browsers' interests are better aligned with those of their users, creating an ecosystem that is positively user-focused.
+For example, one of the most successful Internet applications is the Web. One of its key implementation roles is that of the Web browser -- called the User Agent in {{?RFC7230}} and other specifications. Because there are multiple interoperable implementations, users can switch with relatively low costs, and as a result there is a natural tendency to more carefully consider the user's needs as an agent. This leads to Web browsers' interests being better aligned with those of their users, creating an ecosystem that is more user-focused (even if there are serious challenges in it regarding the balance of power between implementations and the barrier to entry for new implementations).
 
 In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role for representing the needs of the end user. Perhaps as a result of this, that ecosystem and its users face serious challenges.
 
