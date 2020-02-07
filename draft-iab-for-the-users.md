@@ -86,7 +86,7 @@ In these situations, when one of those parties is an "end user" of the Internet 
 {{who}} explains what is meant by "end users"; {{why}} outlines why IETF work should prioritise them, and {{how}} describes how we can do that.
 
 
-# What Are "End Users"? {#who}
+# Who Are "End Users"? {#who}
 
 In this document, "end users," means non-technical users whose activities IETF standards are designed to support, sometimes indirectly. Thus, the end user of a protocol to manage routers is not a router administrator; it is the people using the network that the router operates within.
 
