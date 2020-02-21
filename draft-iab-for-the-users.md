@@ -51,7 +51,7 @@ informative:
 
 --- abstract
 
-This document explains why the IAB believes the IETF should consider end users as its highest priority concern, and how that can be done.
+This document explains why the IAB believes that, when there is a conflict between the interests of end users of the Internet and other parties, IETF decisions should favour end users. It also explores how this can more effectively be achieved.
 
 
 --- note_Note_to_Readers
