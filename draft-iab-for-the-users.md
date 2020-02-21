@@ -146,6 +146,8 @@ In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechan
 
 Instead, an event like a workshop may be more effective if co-located with -- and ideally hosted or co-hosted by -- a forum that's familiar to that stakeholder community. We should also take the opportunity to raise the visibility of IETF work (or potential IETF work) in such fora through conference talks, panels, newsletter articles, etc.
 
+For example, the IAB held the ESCAPE workshop {{?I-D.iab-escape-report}} to solicit input from Internet publishers and advertisers that might be affected by a proposal for new work in the IETF. While the workshop was considered successful, participation might have been improved by identifying an appropriate industry forum and working with them to host the event.
+
 When we engage with the Internet community, we should also clearly identify tailored feedback mechanisms (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.
 
 The Internet Society can be an invaluable partner in these efforts; their focus on the Internet community, policy expertise and resources can help to facilitate discussions with the appropriate parties.
