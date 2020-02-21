@@ -130,7 +130,7 @@ The IETF community does not have any unique insight into what is "good for end u
 
 At the same time, we do have a culture of considerable deference to a broader "Internet community" -- roughly, what this document calls end users -- in our decision-making processes. Mere deference, however, is not adequate; even with the best intentions, we cannot assume that our experiences of the Internet are those of all of its end users, or that our decisions have a positive impact upon them.
 
-Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community. We should enter into a dialogue about not only the technical concerns that are well-represented in the IETF but also the political, social and economic concerns that it engenders, and that are better represented elsewhere.
+Therefore, we have not only a responsibility to analyse and consider the impacts of the IETF's work, but also a responsibility to consult with that greater Internet community. In particular, we should do so when one of our decisions has potential impact upon end users.
 
 The IETF community faces significant hurdles in doing so. Our work is specialised and often esoteric, and processes for developing standards often involve very long timescales. Affected parties are rarely technical experts, and their experience of the Internet is often based upon incomplete (and sometimes inaccurate) models. Often, even when we try to engage a broader audience, their participation is minimal -- until a change affects someone in a way they don't like. Surprising the Internet community is rarely a good outcome.
 
@@ -138,7 +138,7 @@ Government-sponsored individuals sometimes participate in the IETF community. Wh
 
 While some civil society organisations specialise in technology and Internet policy, they typically do not have the capacity to participate broadly, nor are they necessarily representative of the larger Internet community. Nevertheless, their understanding of end user needs is often profound, and they are in many ways the best informed advocates for end user concerns; they should be considered a primary channel for engaging the broader Internet community.
 
-A promising approach to help fill these gaps is to identify and engage with specifically affected communities; for example, one or more industry associations, user groups, or a set of individuals, though we can't of course formally ensure that they are appropriately representative.
+A promising approach to help fill these gaps is to identify and engage with specifically affected communities when making decisions that might affect them; for example, one or more industry associations, user groups, or a set of individuals, though we can't of course formally ensure that they are appropriately representative.
 
 In doing so, we should not require them to  "come to us"; unless a stakeholder community is already engaged in the IETF process effectively, the IETF community should explore how to meet with them on their terms -- taking the initiative to contact them, explain our work, and solicit their feedback.
 
@@ -147,6 +147,8 @@ In particular, while IAB workshops, BoFs and Bar BoFs can be an effective mechan
 Instead, an event like a workshop may be more effective if co-located with -- and ideally hosted or co-hosted by -- a forum that's familiar to that stakeholder community. We should also take the opportunity to raise the visibility of IETF work (or potential IETF work) in such fora through conference talks, panels, newsletter articles, etc.
 
 When we engage with the Internet community, we should also clearly identify tailored feedback mechanisms (e.g., subscribing to a mailing list may not be appropriate), and assure that they are well-known in those communities.
+
+The Internet Society can be an invaluable partner in these efforts; their focus on the Internet community, policy expertise and resources can help to facilitate discussions with the appropriate parties.
 
 Finally, we should remember that the RFC series are Requests For Comments; if there are serious implications of our work, we should document them and ask for feedback from the Internet Community.
 
