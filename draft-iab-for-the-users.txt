@@ -3,9 +3,9 @@
 
 
 Internet Architecture Board (IAB)                          M. Nottingham
-Internet-Draft                                          21 February 2020
+Internet-Draft                                          24 February 2020
 Intended status: Informational                                          
-Expires: 24 August 2020
+Expires: 27 August 2020
 
 
                      The Internet is for End Users
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 1]
+Nottingham               Expires 27 August 2020                 [Page 1]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
 
-   This Internet-Draft will expire on 24 August 2020.
+   This Internet-Draft will expire on 27 August 2020.
 
 Copyright Notice
 
@@ -85,7 +85,7 @@ Table of Contents
    5.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   9
    6.  Security Considerations . . . . . . . . . . . . . . . . . . .   9
    7.  Informative References  . . . . . . . . . . . . . . . . . . .   9
-   Appendix A.  Acknowledgements . . . . . . . . . . . . . . . . . .  10
+   Acknowledgements  . . . . . . . . . . . . . . . . . . . . . . . .  10
    Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  11
 
 1.  Introduction
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 2]
+Nottingham               Expires 27 August 2020                 [Page 2]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -165,7 +165,7 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 3]
+Nottingham               Expires 27 August 2020                 [Page 3]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -221,7 +221,7 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 4]
+Nottingham               Expires 27 August 2020                 [Page 4]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -277,7 +277,7 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 5]
+Nottingham               Expires 27 August 2020                 [Page 5]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -333,7 +333,7 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 6]
+Nottingham               Expires 27 August 2020                 [Page 6]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -366,8 +366,11 @@ Internet-Draft        The Internet is for End Users        February 2020
    rather than downloading an executable program from a service that has
    arbitrary access into the users' system, the user agent only allows
    limited access to display content and run code in a sandboxed
-   environment.  These limitations help to ensure that a user need not
-   completely trust a Web site to browse it.
+   environment.  Of course, end users are diverse and the ability of a
+   limited number of user agents to properly represent individual
+   interests is imperfect, but this arrangement is an improvement over
+   the alternative - the need to completely trust a Web site with all
+   information on your system to browse it.
 
    Defining the user agent role in standards also creates a virtuous
    cycle; it allows multiple implementations, thereby allowing end users
@@ -378,18 +381,15 @@ Internet-Draft        The Internet is for End Users        February 2020
    back into the defining standards.
 
    In contrast, the Internet of Things (IoT) has not yet seen the
-   emergence of a natural role that reflects the needs of the end user.
-   Perhaps as a result of this, that ecosystem and its end users face
-   serious challenges.
+   emergence of a natural role that reflects the needs of the end user;
+   many current systems require dedicated software or hardware for the
+   user-facing component.  Perhaps as a result of this, that ecosystem
+   and its end users face serious challenges.
 
 
 
 
-
-
-
-
-Nottingham               Expires 24 August 2020                 [Page 7]
+Nottingham               Expires 27 August 2020                 [Page 7]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -445,7 +445,7 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 8]
+Nottingham               Expires 27 August 2020                 [Page 8]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -501,7 +501,7 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 24 August 2020                 [Page 9]
+Nottingham               Expires 27 August 2020                 [Page 9]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -543,7 +543,7 @@ Internet-Draft        The Internet is for End Users        February 2020
               <http://groups.csail.mit.edu/ana/Publications/PubPDFs/
               Tussle2002.pdf>.
 
-Appendix A.  Acknowledgements
+Acknowledgements
 
    This document was influenced by many discussions, both inside and
    outside of the IETF and IAB.  In particular, Edward Snowden's
@@ -557,7 +557,7 @@ Appendix A.  Acknowledgements
 
 
 
-Nottingham               Expires 24 August 2020                [Page 10]
+Nottingham               Expires 27 August 2020                [Page 10]
 
 Internet-Draft        The Internet is for End Users        February 2020
 
@@ -613,4 +613,4 @@ Author's Address
 
 
 
-Nottingham               Expires 24 August 2020                [Page 11]
+Nottingham               Expires 27 August 2020                [Page 11]
