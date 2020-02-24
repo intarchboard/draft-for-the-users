@@ -161,11 +161,11 @@ We should pay particular attention to the kinds of architectures we create, and 
 
 For example, one of the most successful Internet applications is the Web, which uses the HTTP application protocol. One of HTTP's key implementation roles is that of the Web browser -- called the "user agent" in {{?RFC7230}} and other specifications.
 
-User agents act as intermediaries between a service and the end user; rather than downloading an executable program from a service that has arbitrary access into the users' system, the user agent only allows limited access to display content and run code in a sandboxed environment. These limitations help to ensure that a user need not completely trust a Web site to browse it.
+User agents act as intermediaries between a service and the end user; rather than downloading an executable program from a service that has arbitrary access into the users' system, the user agent only allows limited access to display content and run code in a sandboxed environment. Of course, end users are diverse and the ability of a limited number of user agents to properly represent individual interests is imperfect, but this arrangement is an improvement over the alternative -- the need to completely trust a Web site with all information on your system to browse it.
 
 Defining the user agent role in standards also creates a virtuous cycle; it allows multiple implementations, thereby allowing end users to switch between them with relatively low costs (although there are concerns about the complexity of the Web creating barriers to entry for new implementations). This creates an incentive for implementers to carefully consider the users' needs, which often are reflected back into the defining standards.
 
-In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role that reflects the needs of the end user. Perhaps as a result of this, that ecosystem and its end users face serious challenges.
+In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role that reflects the needs of the end user; many current systems require dedicated software or hardware for the user-facing component. Perhaps as a result of this, that ecosystem and its end users face serious challenges.
 
 
 ## Identifying Negative End User Impact
