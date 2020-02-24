@@ -209,6 +209,7 @@ This document does not have any direct security impact; however, failing to prio
 --- back
 
 # Acknowledgements
+{:numbered="false"}
 
 This document was influenced by many discussions, both inside and outside of the IETF and IAB. In particular, Edward Snowden's comments regarding the priority of end users at IETF 93 and the HTML5 Priority of Constituencies were both influential.
 
