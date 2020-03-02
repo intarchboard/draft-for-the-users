@@ -3,9 +3,9 @@
 
 
 Internet Architecture Board (IAB)                          M. Nottingham
-Internet-Draft                                          24 February 2020
+Internet-Draft                                              2 March 2020
 Intended status: Informational                                          
-Expires: 27 August 2020
+Expires: 3 September 2020
 
 
                      The Internet is for End Users
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 1]
+Nottingham              Expires 3 September 2020                [Page 1]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
-   This Internet-Draft will expire on 27 August 2020.
+   This Internet-Draft will expire on 3 September 2020.
 
 Copyright Notice
 
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 2]
+Nottingham              Expires 3 September 2020                [Page 2]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    collect data about individuals, and reveal secrets.  It has created
@@ -165,9 +165,9 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 3]
+Nottingham              Expires 3 September 2020                [Page 3]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    A person whose interests we need to consider might not directly be
@@ -221,9 +221,9 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 4]
+Nottingham              Expires 3 September 2020                [Page 4]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    Merely advancing the measurable success of the Internet (e.g.,
@@ -277,9 +277,9 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 5]
+Nottingham              Expires 3 September 2020                [Page 5]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    participation is minimal - until a change affects someone in a way
@@ -333,9 +333,9 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 6]
+Nottingham              Expires 3 September 2020                [Page 6]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    When we engage with the Internet community, we should also clearly
@@ -380,18 +380,18 @@ Internet-Draft        The Internet is for End Users        February 2020
    to carefully consider the users' needs, which often are reflected
    back into the defining standards.
 
-   In contrast, the Internet of Things (IoT) has not yet seen the
-   emergence of a natural role that reflects the needs of the end user;
-   many current systems require dedicated software or hardware for the
-   user-facing component.  Perhaps as a result of this, that ecosystem
-   and its end users face serious challenges.
+   In contrast, the Internet of Things (IoT) has not yet seen the broad
+   adoption of a similar role; many current systems require opaque,
+   vendor-specific software or hardware for the user-facing component.
+   Perhaps as a result of this, that ecosystem and its end users face
+   serious challenges.
 
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 7]
+Nottingham              Expires 3 September 2020                [Page 7]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
 4.3.  Identifying Negative End User Impact
@@ -445,9 +445,9 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 8]
+Nottingham              Expires 3 September 2020                [Page 8]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    There may be cases where genuine technical need requires compromise.
@@ -501,9 +501,9 @@ Internet-Draft        The Internet is for End Users        February 2020
 
 
 
-Nottingham               Expires 27 August 2020                 [Page 9]
+Nottingham              Expires 3 September 2020                [Page 9]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
    [RFC6973]  Cooper, A., Tschofenig, H., Aboba, B., Peterson, J.,
@@ -557,9 +557,9 @@ Acknowledgements
 
 
 
-Nottingham               Expires 27 August 2020                [Page 10]
+Nottingham              Expires 3 September 2020               [Page 10]
 
-Internet-Draft        The Internet is for End Users        February 2020
+Internet-Draft        The Internet is for End Users           March 2020
 
 
 Author's Address
@@ -613,4 +613,4 @@ Author's Address
 
 
 
-Nottingham               Expires 27 August 2020                [Page 11]
+Nottingham              Expires 3 September 2020               [Page 11]
