@@ -165,7 +165,7 @@ User agents act as intermediaries between a service and the end user; rather tha
 
 Defining the user agent role in standards also creates a virtuous cycle; it allows multiple implementations, thereby allowing end users to switch between them with relatively low costs (although there are concerns about the complexity of the Web creating barriers to entry for new implementations). This creates an incentive for implementers to carefully consider the users' needs, which often are reflected back into the defining standards.
 
-In contrast, the Internet of Things (IoT) has not yet seen the emergence of a natural role that reflects the needs of the end user; many current systems require dedicated software or hardware for the user-facing component. Perhaps as a result of this, that ecosystem and its end users face serious challenges.
+In contrast, the Internet of Things (IoT) has not yet seen the broad adoption of a similar role; many current systems require opaque, vendor-specific software or hardware for the user-facing component. Perhaps as a result of this, that ecosystem and its end users face serious challenges.
 
 
 ## Identifying Negative End User Impact
