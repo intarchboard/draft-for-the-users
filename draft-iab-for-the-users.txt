@@ -3,9 +3,9 @@
 
 
 Internet Architecture Board (IAB)                          M. Nottingham
-Internet-Draft                                              2 March 2020
+Internet-Draft                                             10 March 2020
 Intended status: Informational                                          
-Expires: 3 September 2020
+Expires: 11 September 2020
 
 
                      The Internet is for End Users
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Nottingham              Expires 3 September 2020                [Page 1]
+Nottingham              Expires 11 September 2020               [Page 1]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
 
-   This Internet-Draft will expire on 3 September 2020.
+   This Internet-Draft will expire on 11 September 2020.
 
 Copyright Notice
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Nottingham              Expires 3 September 2020                [Page 2]
+Nottingham              Expires 11 September 2020               [Page 2]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
@@ -165,7 +165,7 @@ Internet-Draft        The Internet is for End Users           March 2020
 
 
 
-Nottingham              Expires 3 September 2020                [Page 3]
+Nottingham              Expires 11 September 2020               [Page 3]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
@@ -221,7 +221,7 @@ Internet-Draft        The Internet is for End Users           March 2020
 
 
 
-Nottingham              Expires 3 September 2020                [Page 4]
+Nottingham              Expires 11 September 2020               [Page 4]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
@@ -277,7 +277,7 @@ Internet-Draft        The Internet is for End Users           March 2020
 
 
 
-Nottingham              Expires 3 September 2020                [Page 5]
+Nottingham              Expires 11 September 2020               [Page 5]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
@@ -333,7 +333,7 @@ Internet-Draft        The Internet is for End Users           March 2020
 
 
 
-Nottingham              Expires 3 September 2020                [Page 6]
+Nottingham              Expires 11 September 2020               [Page 6]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
@@ -378,21 +378,24 @@ Internet-Draft        The Internet is for End Users           March 2020
    concerns about the complexity of the Web creating barriers to entry
    for new implementations).  This creates an incentive for implementers
    to carefully consider the users' needs, which often are reflected
-   back into the defining standards.
+   back into the defining standards.  The resulting ecosystem has many
+   remaining problems, but a distinguished user agent role provides an
+   opportunity to improve it.
 
    In contrast, the Internet of Things (IoT) has not yet seen the broad
    adoption of a similar role; many current systems require opaque,
    vendor-specific software or hardware for the user-facing component.
-   Perhaps as a result of this, that ecosystem and its end users face
-   serious challenges.
 
 
 
 
-Nottingham              Expires 3 September 2020                [Page 7]
+Nottingham              Expires 11 September 2020               [Page 7]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
+
+   Perhaps as a result of this, that ecosystem and its end users face
+   serious challenges.
 
 4.3.  Identifying Negative End User Impact
 
@@ -438,17 +441,17 @@ Internet-Draft        The Internet is for End Users           March 2020
    For example, when a decision improves the Internet for end users in
    one jurisdiction, but at the cost of potential harm to others
    elsewhere, that is not a good tradeoff.  As such, we effectively
-   design the Internet for the pessimal environment; if a user can be
-   harmed, they probably will be, somewhere.
 
 
 
 
-
-Nottingham              Expires 3 September 2020                [Page 8]
+Nottingham              Expires 11 September 2020               [Page 8]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
+
+   design the Internet for the pessimal environment; if a user can be
+   harmed, they probably will be, somewhere.
 
    There may be cases where genuine technical need requires compromise.
    However, such tradeoffs are carefully examined and avoided when there
@@ -494,17 +497,17 @@ Internet-Draft        The Internet is for End Users           March 2020
               <https://www.rfc-editor.org/info/rfc3724>.
 
    [RFC3935]  Alvestrand, H., "A Mission Statement for the IETF",
-              BCP 95, RFC 3935, DOI 10.17487/RFC3935, October 2004,
-              <https://www.rfc-editor.org/info/rfc3935>.
 
 
 
 
-
-Nottingham              Expires 3 September 2020                [Page 9]
+Nottingham              Expires 11 September 2020               [Page 9]
 
 Internet-Draft        The Internet is for End Users           March 2020
 
+
+              BCP 95, RFC 3935, DOI 10.17487/RFC3935, October 2004,
+              <https://www.rfc-editor.org/info/rfc3935>.
 
    [RFC6973]  Cooper, A., Tschofenig, H., Aboba, B., Peterson, J.,
               Morris, J., Hansen, M., and R. Smith, "Privacy
@@ -550,17 +553,19 @@ Acknowledgements
    comments regarding the priority of end users at IETF 93 and the HTML5
    Priority of Constituencies were both influential.
 
+
+
+
+
+Nottingham              Expires 11 September 2020              [Page 10]
+
+Internet-Draft        The Internet is for End Users           March 2020
+
+
    Many people gave feedback and input, including Harald Alvestrand,
    Mohamed Boucadair, Stephen Farrell, Joe Hildebrand, Lee Howard, Russ
    Housley, Niels ten Oever, Mando Rachovitsa, Martin Thomson, Brian
    Trammell, John Klensin, Eliot Lear, Ted Hardie, and Jari Arkko.
-
-
-
-Nottingham              Expires 3 September 2020               [Page 10]
-
-Internet-Draft        The Internet is for End Users           March 2020
-
 
 Author's Address
 
@@ -608,9 +613,4 @@ Author's Address
 
 
 
-
-
-
-
-
-Nottingham              Expires 3 September 2020               [Page 11]
+Nottingham              Expires 11 September 2020              [Page 11]
