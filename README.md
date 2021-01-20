@@ -1,7 +1,8 @@
 # The Internet is for End Users
 
-This is the working area for the individual Internet-Draft, "The Internet is for End Users".
+This is the working area for the IAB Internet-Draft, "The Internet is for End Users".
 
+* [Published RFC8890](https://rfc-editor.org/rfc/rfc8890.html)
 * [Editor's Copy](https://intarchboard.github.io/for-the-users/#go.draft-iab-for-the-users.html)
 * [Individual Draft](https://tools.ietf.org/html/draft-iab-for-the-users)
 * [Compare Editor's Copy to Individual Draft](https://intarchboard.github.io/for-the-users/#go.draft-iab-for-the-users.diff)
